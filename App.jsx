@@ -87,7 +87,10 @@ export default function App() {
     <div className="page">
       <header className="header">
         <div className="container header-inner">
-          <div className="logo">Чат-боты для бизнеса</div>
+          <div className="logo-wrap">
+            <img src="./logobot.png" alt="Логотип" className="site-logo" />
+            <div className="logo-text">Чат-боты для бизнеса</div>
+          </div>
 
           <nav className="nav">
             <button onClick={() => scrollToId('case')}>Кейс</button>
@@ -106,7 +109,7 @@ export default function App() {
               <div className="hero-badge">Telegram и мессенджер-боты под задачу бизнеса</div>
 
               <h1 className="hero-title">
-                Удобные боты
+                Минималистичные боты
                 <span>для заявок, записи и FAQ</span>
               </h1>
 
