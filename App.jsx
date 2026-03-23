@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function App() {
+  const [activeImage, setActiveImage] = useState(null)
+
   const scrollToId = (id) => {
     const el = document.getElementById(id)
     if (el) {
@@ -37,6 +39,21 @@ export default function App() {
     'Эксперты',
     'Сервисы',
     'Локальный бизнес',
+  ]
+
+  const caseImages = [
+    {
+      src: '/case-interface.png',
+      alt: 'Интерфейс Telegram-бота',
+      title: 'Интерфейс бота',
+      text: 'Главное меню и сценарий первого касания',
+    },
+    {
+      src: '/case-table.png',
+      alt: 'Фиксация заявки в Google Таблице',
+      title: 'Google Таблица',
+      text: 'Заявки попадают в структурированный учёт со статусами',
+    },
   ]
 
   const renderCardVisual = (type) => {
@@ -113,7 +130,7 @@ export default function App() {
               <div className="hero-badge">Telegram и мессенджер-боты под задачу бизнеса</div>
 
               <h1 className="hero-title">
-                Боты любой сложности
+                Минималистичные боты
                 <span>для заявок, записи и FAQ</span>
               </h1>
 
@@ -192,6 +209,25 @@ export default function App() {
                 уведомление администратору и сохранение заявок в таблицу
               </p>
 
+              <div className="case-media-grid">
+                {caseImages.map((image) => (
+                  <button
+                    key={image.title}
+                    className="case-media-card"
+                    onClick={() => setActiveImage(image)}
+                    aria-label={image.title}
+                  >
+                    <div className="case-media-image-wrap">
+                      <img src={image.src} alt={image.alt} className="case-media-image" />
+                    </div>
+                    <div className="case-media-content">
+                      <div className="case-media-title">{image.title}</div>
+                      <div className="case-media-text">{image.text}</div>
+                    </div>
+                  </button>
+                ))}
+              </div>
+
               <div className="case-points">
                 <div>Запись на приём</div>
                 <div>Срочные обращения</div>
@@ -246,6 +282,25 @@ export default function App() {
           </div>
         </section>
       </main>
+
+      {activeImage && (
+        <div className="image-modal-overlay" onClick={() => setActiveImage(null)}>
+          <div className="image-modal" onClick={(e) => e.stopPropagation()}>
+            <button
+              className="image-modal-close"
+              onClick={() => setActiveImage(null)}
+              aria-label="Закрыть"
+            >
+              ×
+            </button>
+            <img src={activeImage.src} alt={activeImage.alt} className="image-modal-img" />
+            <div className="image-modal-caption">
+              <div className="image-modal-title">{activeImage.title}</div>
+              <div className="image-modal-text">{activeImage.text}</div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
