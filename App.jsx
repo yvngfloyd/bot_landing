@@ -1,5 +1,4 @@
 import React from 'react'
-import logoBot from './logobot.png'
 
 export default function App() {
   const scrollToId = (id) => {
@@ -89,7 +88,7 @@ export default function App() {
       <header className="header">
         <div className="container header-inner">
           <div className="logo-wrap">
-            <img src={logoBot} alt="Логотип" className="site-logo" />
+            <img src="/logobot.png" alt="Логотип" className="site-logo" />
             <div className="logo-text">Чат-боты для бизнеса</div>
           </div>
 
@@ -110,7 +109,7 @@ export default function App() {
               <div className="hero-badge">Telegram и мессенджер-боты под задачу бизнеса</div>
 
               <h1 className="hero-title">
-                Удобные боты
+                Боты
                 <span>для заявок, записи и FAQ</span>
               </h1>
 
