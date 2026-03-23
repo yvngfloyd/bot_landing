@@ -8,52 +8,6 @@ export default function App() {
     }
   }
 
-  const renderCardVisual = (type) => {
-    if (type === 'calendar') {
-      return (
-        <div className="info-visual info-visual-calendar">
-          <div className="calendar-top"></div>
-          <div className="calendar-body">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      )
-    }
-
-    if (type === 'chat') {
-      return (
-        <div className="info-visual info-visual-chat">
-          <div className="chat-bubble big">?</div>
-          <div className="chat-bubble small"></div>
-        </div>
-      )
-    }
-
-    if (type === 'table') {
-      return (
-        <div className="info-visual info-visual-table">
-          <div className="table-row">
-            <span></span>
-            <span></span>
-          </div>
-          <div className="table-row">
-            <span></span>
-            <span></span>
-          </div>
-          <div className="table-row">
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      )
-    }
-
-    return <div className="info-icon"></div>
-  }
-
   const cards = [
     {
       title: 'Запись клиентов',
@@ -80,6 +34,54 @@ export default function App() {
     'Сервисы',
     'Локальный бизнес',
   ]
+
+  const renderCardVisual = (type) => {
+    if (type === 'calendar') {
+      return (
+        <div className="info-visual info-visual-calendar" aria-hidden="true">
+          <div className="calendar-ring ring-left"></div>
+          <div className="calendar-ring ring-right"></div>
+          <div className="calendar-top"></div>
+          <div className="calendar-body">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      )
+    }
+
+    if (type === 'chat') {
+      return (
+        <div className="info-visual info-visual-chat" aria-hidden="true">
+          <div className="chat-bubble chat-bubble-main">?</div>
+          <div className="chat-bubble chat-bubble-side"></div>
+        </div>
+      )
+    }
+
+    if (type === 'table') {
+      return (
+        <div className="info-visual info-visual-table" aria-hidden="true">
+          <div className="table-row">
+            <span></span>
+            <span></span>
+          </div>
+          <div className="table-row">
+            <span></span>
+            <span></span>
+          </div>
+          <div className="table-row">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      )
+    }
+
+    return <div className="info-visual"></div>
+  }
 
   return (
     <div className="page">
