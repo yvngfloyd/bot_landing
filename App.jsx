@@ -8,18 +8,67 @@ export default function App() {
     }
   }
 
+  const renderCardVisual = (type) => {
+    if (type === 'calendar') {
+      return (
+        <div className="info-visual info-visual-calendar">
+          <div className="calendar-top"></div>
+          <div className="calendar-body">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      )
+    }
+
+    if (type === 'chat') {
+      return (
+        <div className="info-visual info-visual-chat">
+          <div className="chat-bubble big">?</div>
+          <div className="chat-bubble small"></div>
+        </div>
+      )
+    }
+
+    if (type === 'table') {
+      return (
+        <div className="info-visual info-visual-table">
+          <div className="table-row">
+            <span></span>
+            <span></span>
+          </div>
+          <div className="table-row">
+            <span></span>
+            <span></span>
+          </div>
+          <div className="table-row">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      )
+    }
+
+    return <div className="info-icon"></div>
+  }
+
   const cards = [
     {
       title: 'Запись клиентов',
       text: 'Бот помогает собирать заявки на запись и передавать их в удобном виде',
+      type: 'calendar',
     },
     {
       title: 'FAQ и вопросы',
       text: 'Закрывает типовые вопросы до того, как их начнёт разбирать администратор',
+      type: 'chat',
     },
     {
       title: 'Заявки в таблицу',
       text: 'Данные сохраняются структурированно, чтобы не терять обращения и видеть статусы',
+      type: 'table',
     },
   ]
 
@@ -115,7 +164,7 @@ export default function App() {
             <div className="cards-grid">
               {cards.map((card) => (
                 <div className="info-card" key={card.title}>
-                  <div className="info-icon"></div>
+                  {renderCardVisual(card.type)}
                   <h3>{card.title}</h3>
                   <p>{card.text}</p>
                 </div>
