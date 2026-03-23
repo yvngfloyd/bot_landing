@@ -68,11 +68,20 @@ a {
   gap: 20px;
 }
 
-.logo-wrap {
+.brand-button {
   display: flex;
   align-items: center;
   gap: 12px;
   min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+}
+
+.brand-button:hover {
+  opacity: 0.92;
 }
 
 .site-logo {
@@ -555,7 +564,7 @@ a {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 32px;
-  align-items: end;
+  align-items: center;
 }
 
 .contact-left p {
@@ -572,6 +581,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  min-width: 320px;
 }
 
 .btn-white {
@@ -591,6 +601,16 @@ a {
 
 .btn-outline:hover {
   background: rgba(255, 255, 255, 0.12);
+}
+
+.phone-pill {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e2e8f0;
+}
+
+.phone-pill:hover {
+  background: rgba(255, 255, 255, 0.08);
 }
 
 @media (max-width: 1100px) {
@@ -617,6 +637,7 @@ a {
 
   .contact-right {
     width: 100%;
+    min-width: 0;
   }
 
   .contact-right a {
@@ -632,7 +653,7 @@ a {
     flex-direction: column;
   }
 
-  .logo-wrap {
+  .brand-button {
     width: 100%;
   }
 
