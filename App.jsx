@@ -228,7 +228,7 @@ export default function App() {
                 <a className="btn btn-white" href="https://t.me/tgbotsetup">
                   Написать в Telegram
                 </a>
-                <a className="btn btn-outline" href="https://wa.me/79500000000">
+                <a className="btn btn-outline" href="https://wa.me/79081673109">
                   Написать в WhatsApp
                 </a>
               </div>
