@@ -1,4 +1,5 @@
 import React from 'react'
+import logoBot from './logobot.png'
 
 export default function App() {
   const scrollToId = (id) => {
@@ -88,7 +89,7 @@ export default function App() {
       <header className="header">
         <div className="container header-inner">
           <div className="logo-wrap">
-            <img src="./logobot.png" alt="Логотип" className="site-logo" />
+            <img src={logoBot} alt="Логотип" className="site-logo" />
             <div className="logo-text">Чат-боты для бизнеса</div>
           </div>
 
@@ -109,7 +110,7 @@ export default function App() {
               <div className="hero-badge">Telegram и мессенджер-боты под задачу бизнеса</div>
 
               <h1 className="hero-title">
-                Минималистичные боты
+                Боты любой сложности
                 <span>для заявок, записи и FAQ</span>
               </h1>
 
@@ -222,8 +223,8 @@ export default function App() {
                 <div className="contact-badge">Контакты</div>
                 <h2>Можно обсудить задачу без длинных созвонов</h2>
                 <p>
-                  Опишите задачу кратко и мы сможем показать подходящую
-                  логику бота и предложить формат под ваш бизнес
+                  Достаточно коротко описать процесс. Дальше можно показать подходящую
+                  логику бота и предложить формат под вашу нишу
                 </p>
               </div>
 
