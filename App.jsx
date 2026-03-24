@@ -212,25 +212,48 @@ function App() {
             </div>
 
             <div className="platform-grid">
-              <article className="platform-card">
-                <div className="platform-icon">M</div>
-                <h3>MAX</h3>
-                <p>Подходит бизнесу, которому важен российский контур и спокойная работа внутри локального рынка</p>
-              </article>
+  <article className="platform-card">
+    <div className="platform-icon platform-icon-max" aria-hidden="true">
+      <svg viewBox="0 0 64 64" className="platform-svg">
+        <rect x="10" y="10" width="44" height="44" rx="14" fill="currentColor" opacity="0.12" />
+        <path
+          d="M18 42V22h5.2l8.8 11.2L40.8 22H46v20h-5.8V31.6L32 42l-8.2-10.4V42H18z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <h3>MAX</h3>
+    <p>Подходит бизнесу, которому важен российский контур и спокойная работа внутри локального рынка</p>
+  </article>
 
-              <article className="platform-card">
-                <div className="platform-icon">T</div>
-                <h3>Telegram</h3>
-                <p>Удобен там, где аудитория уже привыкла писать, задавать вопросы и оставлять заявки</p>
-              </article>
-
-              <article className="platform-card">
-                <div className="platform-icon">W</div>
-                <h3>WhatsApp</h3>
-                <p>Можно держать как дополнительный канал под конкретную задачу и привычки клиентов</p>
-              </article>
+          <article className="platform-card">
+            <div className="platform-icon platform-icon-telegram" aria-hidden="true">
+              <svg viewBox="0 0 64 64" className="platform-svg">
+                <circle cx="32" cy="32" r="22" fill="currentColor" opacity="0.12" />
+                <path
+                  d="M45.5 21.5 17.8 32.2c-1.9.7-1.8 3.4.2 4l7.1 2.2 2.8 8.5c.5 1.6 2.5 2.1 3.7.9l4-4.1 7.8 5.7c1.4 1 3.4.2 3.8-1.5l5.1-23.1c.4-2-1.5-3.8-3.4-3.1Zm-4.3 6.2-11 10.5-.4 5.1-1.8-5.6-5.7-1.8 18.9-7.3Z"
+                  fill="currentColor"
+                />
+              </svg>
             </div>
-          </div>
+            <h3>Telegram</h3>
+            <p>Удобен там, где аудитория уже привыкла писать, задавать вопросы и оставлять заявки</p>
+          </article>
+        
+          <article className="platform-card">
+            <div className="platform-icon platform-icon-whatsapp" aria-hidden="true">
+              <svg viewBox="0 0 64 64" className="platform-svg">
+                <circle cx="32" cy="30" r="20" fill="currentColor" opacity="0.12" />
+                <path
+                  d="M21 48l2.6-7A18 18 0 1 1 50 30c0 9.9-8.1 18-18 18-3 0-5.9-.7-8.4-2L21 48Zm10.5-23.4c-.5-1.1-1-1.1-1.5-1.1h-1.3c-.4 0-1.1.2-1.7.8-.6.7-2.2 2.1-2.2 5.2 0 3.1 2.3 6 2.6 6.4.3.4 4.5 7.1 11 9.6 5.4 2.1 6.5 1.7 7.6 1.6 1.2-.1 3.7-1.5 4.2-3 .5-1.5.5-2.8.3-3-.2-.2-.8-.4-1.7-.9-.9-.4-5-2.5-5.8-2.8-.8-.3-1.3-.4-1.9.4-.6.9-2.3 2.8-2.8 3.3-.5.6-1.1.6-2 .2-1-.5-4-1.5-7.5-4.8-2.8-2.5-4.6-5.6-5.1-6.5-.5-.9 0-1.4.4-1.9.4-.4.9-1.1 1.3-1.6.4-.6.5-1 .8-1.7.2-.6.1-1.2-.1-1.6-.2-.4-1.8-4.4-2.5-6Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <h3>WhatsApp</h3>
+            <p>Можно держать как дополнительный канал под конкретную задачу и привычки клиентов</p>
+          </article>
+        </div>
         </section>
 
         <section className="section section-dark" id="case">
