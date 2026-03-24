@@ -1,14 +1,54 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function App() {
   const [activeImage, setActiveImage] = useState(null)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const scrollToId = (id) => {
     const el = document.getElementById(id)
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      const headerOffset = 88
+      const elementPosition = el.getBoundingClientRect().top + window.pageYOffset
+      const offsetPosition = Math.max(elementPosition - headerOffset, 0)
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      })
     }
+    setMobileMenuOpen(false)
   }
+
+  const openTelegram = () => {
+    window.open('https://t.me/yevgeniyf1oyd', '_blank', 'noopener,noreferrer')
+  }
+
+  const openWhatsApp = () => {
+    window.open('https://wa.me/79081673109', '_blank', 'noopener,noreferrer')
+  }
+
+  useEffect(() => {
+    const onResize = () => {
+      if (window.innerWidth > 860) {
+        setMobileMenuOpen(false)
+      }
+    }
+
+    const onKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        setActiveImage(null)
+        setMobileMenuOpen(false)
+      }
+    }
+
+    window.addEventListener('resize', onResize)
+    window.addEventListener('keydown', onKeyDown)
+
+    return () => {
+      window.removeEventListener('resize', onResize)
+      window.removeEventListener('keydown', onKeyDown)
+    }
+  }, [])
 
   const heroPoints = [
     'Принимает обращения 24/7 и отвечает сразу',
@@ -123,35 +163,67 @@ export default function App() {
     },
   ]
 
-  const openTelegram = () => {
-    window.open('https://t.me/yevgeniyf1oyd', '_blank')
-  }
-
-  const openWhatsApp = () => {
-    window.open('https://wa.me/79081673109', '_blank')
-  }
-
   return (
     <>
       <div className="page-shell">
         <header className="header">
           <div className="container header-inner">
-            <button className="brand" onClick={() => scrollToId('hero')}>
+            <button
+              type="button"
+              className="brand"
+              onClick={() => scrollToId('hero')}
+              aria-label="Перейти к началу страницы"
+            >
               <span className="brand-mark">B</span>
               <span className="brand-text">Bot.setup</span>
             </button>
 
-            <nav className="nav">
-              <button onClick={() => scrollToId('pain')}>Проблема</button>
-              <button onClick={() => scrollToId('product')}>Решение</button>
-              <button onClick={() => scrollToId('case')}>Кейс</button>
-              <button onClick={() => scrollToId('process')}>Этапы</button>
-              <button onClick={() => scrollToId('faq')}>FAQ</button>
+            <nav className="nav" aria-label="Основная навигация">
+              <button type="button" onClick={() => scrollToId('pain')}>Проблема</button>
+              <button type="button" onClick={() => scrollToId('product')}>Решение</button>
+              <button type="button" onClick={() => scrollToId('case')}>Кейс</button>
+              <button type="button" onClick={() => scrollToId('process')}>Этапы</button>
+              <button type="button" onClick={() => scrollToId('faq')}>FAQ</button>
             </nav>
 
-            <button className="header-cta" onClick={() => scrollToId('contact')}>
-              Получить схему
-            </button>
+            <div className="header-actions">
+              <button
+                type="button"
+                className="header-cta desktop-only"
+                onClick={() => scrollToId('contact')}
+              >
+                Получить схему
+              </button>
+
+              <button
+                type="button"
+                className="burger"
+                aria-label={mobileMenuOpen ? 'Закрыть меню' : 'Открыть меню'}
+                aria-expanded={mobileMenuOpen}
+                onClick={() => setMobileMenuOpen((prev) => !prev)}
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+
+          <div className={`mobile-menu ${mobileMenuOpen ? 'mobile-menu-open' : ''}`}>
+            <div className="container mobile-menu-inner">
+              <button type="button" onClick={() => scrollToId('pain')}>Проблема</button>
+              <button type="button" onClick={() => scrollToId('product')}>Решение</button>
+              <button type="button" onClick={() => scrollToId('case')}>Кейс</button>
+              <button type="button" onClick={() => scrollToId('process')}>Этапы</button>
+              <button type="button" onClick={() => scrollToId('faq')}>FAQ</button>
+              <button
+                type="button"
+                className="header-cta mobile-cta"
+                onClick={() => scrollToId('contact')}
+              >
+                Получить схему
+              </button>
+            </div>
           </div>
         </header>
 
@@ -182,10 +254,10 @@ export default function App() {
                 </div>
 
                 <div className="hero-actions">
-                  <button className="btn btn-primary" onClick={() => scrollToId('contact')}>
+                  <button type="button" className="btn btn-primary" onClick={() => scrollToId('contact')}>
                     Получить схему бота
                   </button>
-                  <button className="btn btn-secondary" onClick={() => scrollToId('case')}>
+                  <button type="button" className="btn btn-secondary" onClick={() => scrollToId('case')}>
                     Посмотреть кейс
                   </button>
                 </div>
@@ -195,7 +267,7 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="hero-visual">
+              <div className="hero-visual" aria-hidden="true">
                 <div className="hero-backdrop"></div>
 
                 <div className="phone-card">
@@ -331,6 +403,7 @@ export default function App() {
 
                 <div className="case-gallery">
                   <button
+                    type="button"
                     className="case-shot"
                     onClick={() =>
                       setActiveImage({
@@ -348,6 +421,7 @@ export default function App() {
                   </button>
 
                   <button
+                    type="button"
                     className="case-shot"
                     onClick={() =>
                       setActiveImage({
@@ -469,13 +543,15 @@ export default function App() {
                 </div>
 
                 <div className="contact-actions">
-                  <button className="btn btn-primary" onClick={openTelegram}>
+                  <button type="button" className="btn btn-primary" onClick={openTelegram}>
                     Написать в Telegram
                   </button>
-                  <button className="btn btn-secondary" onClick={openWhatsApp}>
+                  <button type="button" className="btn btn-secondary" onClick={openWhatsApp}>
                     Написать в WhatsApp
                   </button>
-                  <div className="contact-phone">+7 908 167-31-09</div>
+                  <a className="contact-phone" href="tel:+79081673109">
+                    +7 908 167-31-09
+                  </a>
                 </div>
               </div>
             </div>
@@ -484,9 +560,15 @@ export default function App() {
       </div>
 
       {activeImage && (
-        <div className="modal-overlay" onClick={() => setActiveImage(null)}>
+        <div
+          className="modal-overlay"
+          onClick={() => setActiveImage(null)}
+          role="dialog"
+          aria-modal="true"
+        >
           <div className="modal-card" onClick={(e) => e.stopPropagation()}>
             <button
+              type="button"
               className="modal-close"
               onClick={() => setActiveImage(null)}
               aria-label="Закрыть"
