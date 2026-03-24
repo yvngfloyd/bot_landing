@@ -28,6 +28,7 @@ function App() {
             <button type="button" onClick={() => scrollToId("pain")}>Что решает бот</button>
             <button type="button" onClick={() => scrollToId("platforms")}>Каналы</button>
             <button type="button" onClick={() => scrollToId("case")}>Кейс</button>
+            <button type="button" onClick={() => scrollToId("pricing")}>Тарифы</button>
             <button type="button" onClick={() => scrollToId("process")}>Этапы</button>
             <button type="button" onClick={() => scrollToId("faq")}>FAQ</button>
           </nav>
@@ -38,7 +39,7 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            Получить схему
+            Посмотреть, как бот может работать у вас
           </a>
         </div>
       </header>
@@ -69,7 +70,7 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Получить схему
+                  Посмотреть, как бот может работать у вас
                 </a>
 
                 <button
@@ -132,7 +133,7 @@ function App() {
         <section className="section section-muted" id="pain">
           <div className="container">
             <div className="section-head">
-              <div className="section-kicker">Проблема</div>
+              <div className="section-kicker">Что решает бот</div>
               <h2>Потери начинаются не после рекламы, а в момент первого сообщения клиента</h2>
               <p>
                 Когда обращения приходят вручную, администратор отвечает не сразу,
@@ -157,21 +158,8 @@ function App() {
                 <p>Срочные случаи, новые заявки и обычные вопросы смешиваются между собой</p>
               </div>
             </div>
-          </div>
-        </section>
 
-        <section className="section" id="product">
-          <div className="container">
-            <div className="section-head">
-              <div className="section-kicker">Решение</div>
-              <h2>Это не просто бот, а готовый сценарий первичной обработки обращений</h2>
-              <p>
-                Бот помогает принять заявку, закрыть типовые вопросы и передать
-                в работу уже понятное и структурированное обращение
-              </p>
-            </div>
-
-            <div className="feature-grid">
+            <div className="feature-grid feature-grid-top">
               <article className="feature-card">
                 <div className="feature-icon">📅</div>
                 <h3>Приём заявок и запись</h3>
@@ -211,7 +199,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section section-muted" id="platforms">
+        <section className="section" id="platforms">
           <div className="container">
             <div className="section-head">
               <div className="section-kicker">Каналы запуска</div>
@@ -303,6 +291,143 @@ function App() {
                     <strong>Учёт обращений</strong>
                     <span>Структурированный список заявок и статусов для дальнейшей работы</span>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section section-muted" id="pricing">
+          <div className="container">
+            <div className="section-head">
+              <div className="section-kicker">Тарифы</div>
+              <h2>Можно начать с базового сценария и перейти на расширенный формат</h2>
+              <p>
+                Для части бизнеса достаточно базового запуска. Если нужен более глубокий сценарий,
+                интеграции и доработка логики, подойдёт расширенный тариф
+              </p>
+            </div>
+
+            <div className="pricing-grid">
+              <div className="pricing-card pricing-card-basic">
+                <div className="pricing-top-line pricing-top-line-green"></div>
+                <div className="pricing-label">тариф</div>
+                <h3 className="pricing-title pricing-title-green">БАЗОВЫЙ</h3>
+                <p className="pricing-description">
+                  Подходит бизнесу, которому нужен быстрый запуск без перегруза логикой
+                </p>
+
+                <div className="pricing-price">от 15 000 ₽</div>
+                <div className="pricing-period">разовый запуск</div>
+
+                <a
+                  className="pricing-button pricing-button-green"
+                  href="https://wa.me/79081673109"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Обсудить базовый запуск
+                </a>
+
+                <div className="pricing-features-title">Что входит</div>
+                <ul className="pricing-list">
+                  <li>Базовый сценарий бота</li>
+                  <li>Приём заявок и запись</li>
+                  <li>Ответы на частые вопросы</li>
+                  <li>Передача обращения в работу</li>
+                  <li>Один канал запуска</li>
+                  <li>Первичная настройка текстов</li>
+                </ul>
+              </div>
+
+              <div className="pricing-card pricing-card-pro">
+                <div className="pricing-top-line pricing-top-line-blue"></div>
+                <div className="pricing-label">тариф</div>
+                <h3 className="pricing-title pricing-title-blue">РАСШИРЕННЫЙ</h3>
+                <p className="pricing-description">
+                  Для бизнеса, которому нужен максимум сценариев, доработок и гибкости под процесс
+                </p>
+
+                <div className="pricing-price">от 35 000 ₽</div>
+                <div className="pricing-period">разовый запуск</div>
+
+                <a
+                  className="pricing-button pricing-button-blue"
+                  href="https://wa.me/79081673109"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Обсудить расширенный запуск
+                </a>
+
+                <div className="pricing-features-title">Что входит</div>
+                <ul className="pricing-list">
+                  <li>Всё из базового тарифа</li>
+                  <li>Несколько веток сценария</li>
+                  <li>Срочные обращения и маршрутизация</li>
+                  <li>Учёт заявок и статусов</li>
+                  <li>Несколько каналов запуска</li>
+                  <li>Доработка логики под процесс</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="pricing-table-wrap">
+              <h3 className="pricing-table-title">Сравнение тарифов</h3>
+
+              <div className="pricing-table">
+                <div className="pricing-table-row pricing-table-head">
+                  <div className="pricing-table-cell pricing-table-feature">Функция</div>
+                  <div className="pricing-table-cell">Базовый</div>
+                  <div className="pricing-table-cell">Расширенный</div>
+                </div>
+
+                <div className="pricing-table-row">
+                  <div className="pricing-table-cell pricing-table-feature">Приём заявок и запись</div>
+                  <div className="pricing-table-cell">Да</div>
+                  <div className="pricing-table-cell">Да</div>
+                </div>
+
+                <div className="pricing-table-row">
+                  <div className="pricing-table-cell pricing-table-feature">Ответы на частые вопросы</div>
+                  <div className="pricing-table-cell">Да</div>
+                  <div className="pricing-table-cell">Да</div>
+                </div>
+
+                <div className="pricing-table-row">
+                  <div className="pricing-table-cell pricing-table-feature">Один канал запуска</div>
+                  <div className="pricing-table-cell">Да</div>
+                  <div className="pricing-table-cell">Да</div>
+                </div>
+
+                <div className="pricing-table-row">
+                  <div className="pricing-table-cell pricing-table-feature">Несколько каналов запуска</div>
+                  <div className="pricing-table-cell">Нет</div>
+                  <div className="pricing-table-cell">Да</div>
+                </div>
+
+                <div className="pricing-table-row">
+                  <div className="pricing-table-cell pricing-table-feature">Срочные обращения</div>
+                  <div className="pricing-table-cell">Базово</div>
+                  <div className="pricing-table-cell">Да</div>
+                </div>
+
+                <div className="pricing-table-row">
+                  <div className="pricing-table-cell pricing-table-feature">Учёт обращений и статусов</div>
+                  <div className="pricing-table-cell">Опционально</div>
+                  <div className="pricing-table-cell">Да</div>
+                </div>
+
+                <div className="pricing-table-row">
+                  <div className="pricing-table-cell pricing-table-feature">Глубокая доработка логики</div>
+                  <div className="pricing-table-cell">Нет</div>
+                  <div className="pricing-table-cell">Да</div>
+                </div>
+
+                <div className="pricing-table-row">
+                  <div className="pricing-table-cell pricing-table-feature">Подстройка под процесс бизнеса</div>
+                  <div className="pricing-table-cell">Базово</div>
+                  <div className="pricing-table-cell">Расширенно</div>
                 </div>
               </div>
             </div>
