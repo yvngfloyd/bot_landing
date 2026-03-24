@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import "./styles.css"
 
 export default function App() {
   const [activeImage, setActiveImage] = useState(null)
