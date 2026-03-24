@@ -27,9 +27,7 @@ function App() {
                 MAX, Telegram и WhatsApp для приёма заявок
               </div>
 
-              <h1>
-                Боты для записи клиентов и обработки обращений
-              </h1>
+              <h1>Боты для записи клиентов и обработки обращений</h1>
 
               <p className="hero-text">
                 Приём заявок, ответы на частые вопросы и передача
@@ -162,7 +160,7 @@ function App() {
         </section>
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
