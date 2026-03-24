@@ -130,8 +130,8 @@ export default function App() {
               <div className="hero-badge">Telegram и мессенджер-боты под задачу бизнеса</div>
 
               <h1 className="hero-title">
-                Минималистичные боты
-                <span>для заявок, записи и FAQ</span>
+                Чат - боты 
+                <span>которые увеличивают конверсию заявок из мессенджеров и не дают терять клиентов</span>
               </h1>
 
               <p className="hero-text">
