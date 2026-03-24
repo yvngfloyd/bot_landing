@@ -39,7 +39,7 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            Посмотреть, как бот может работать у вас
+            Начать запуск
           </a>
         </div>
       </header>
@@ -70,7 +70,7 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Посмотреть, как бот может работать у вас
+                  Начать запуск
                 </a>
 
                 <button
