@@ -25,8 +25,7 @@ function App() {
           </button>
 
           <nav className="nav">
-            <button type="button" onClick={() => scrollToId("pain")}>Проблема</button>
-            <button type="button" onClick={() => scrollToId("product")}>Решение</button>
+            <button type="button" onClick={() => scrollToId("pain")}>Что решает бот</button>
             <button type="button" onClick={() => scrollToId("platforms")}>Каналы</button>
             <button type="button" onClick={() => scrollToId("case")}>Кейс</button>
             <button type="button" onClick={() => scrollToId("process")}>Этапы</button>
