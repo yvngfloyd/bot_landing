@@ -1,12 +1,4 @@
 import "./style.css"
-import {
-  CalendarCheck,
-  MessageCircle,
-  AlertCircle,
-  FileText,
-  BarChart3,
-  Settings
-} from "lucide-react"
 
 function App() {
   return (
@@ -52,63 +44,39 @@ function App() {
           <div className="features-grid">
 
             <div className="feature-card">
-              <div className="feature-icon">
-                <CalendarCheck size={28} />
-              </div>
+              <div className="feature-icon">📅</div>
               <h3>Приём заявок и запись</h3>
-              <p>
-                Бот собирает имя, контакт, услугу и удобное время
-              </p>
+              <p>Бот собирает имя, контакт, услугу и удобное время</p>
             </div>
 
             <div className="feature-card">
-              <div className="feature-icon">
-                <MessageCircle size={28} />
-              </div>
+              <div className="feature-icon">💬</div>
               <h3>Ответы на частые вопросы</h3>
-              <p>
-                Закрывает типовые вопросы без участия администратора
-              </p>
+              <p>Закрывает типовые вопросы без участия администратора</p>
             </div>
 
             <div className="feature-card">
-              <div className="feature-icon">
-                <AlertCircle size={28} />
-              </div>
+              <div className="feature-icon">⚡</div>
               <h3>Срочные обращения</h3>
-              <p>
-                Отдельная ветка для срочных заявок с приоритетом
-              </p>
+              <p>Отдельная ветка для срочных заявок с приоритетом</p>
             </div>
 
             <div className="feature-card">
-              <div className="feature-icon">
-                <FileText size={28} />
-              </div>
+              <div className="feature-icon">📄</div>
               <h3>Структурированная заявка</h3>
-              <p>
-                Администратор получает готовую карточку обращения
-              </p>
+              <p>Администратор получает готовую карточку обращения</p>
             </div>
 
             <div className="feature-card">
-              <div className="feature-icon">
-                <BarChart3 size={28} />
-              </div>
+              <div className="feature-icon">📊</div>
               <h3>Учёт обращений</h3>
-              <p>
-                Все заявки сохраняются и отслеживаются по статусам
-              </p>
+              <p>Все заявки сохраняются и отслеживаются по статусам</p>
             </div>
 
             <div className="feature-card">
-              <div className="feature-icon">
-                <Settings size={28} />
-              </div>
+              <div className="feature-icon">⚙️</div>
               <h3>Сценарий под бизнес</h3>
-              <p>
-                Логика адаптируется под конкретную нишу
-              </p>
+              <p>Логика адаптируется под конкретную нишу</p>
             </div>
 
           </div>
