@@ -110,7 +110,7 @@ export default function App() {
         <div className="container header-inner">
           <button className="brand-button" onClick={scrollToTop} aria-label="Наверх">
             <img src="/logobot.png" alt="Логотип" className="site-logo" />
-            <div className="logo-text">Чат-боты для бизнеса</div>
+            <div className="logo-text">Bot.setup</div>
           </button>
 
           <nav className="nav">
