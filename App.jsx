@@ -35,9 +35,7 @@ function App() {
 
           <a
             className="header-cta"
-            href="https://wa.me/79081673109"
-            target="_blank"
-            rel="noreferrer"
+            href="/contact.html"
           >
             Выбрать связь
           </a>
@@ -64,12 +62,7 @@ function App() {
               </div>
 
               <div className="hero-actions">
-                <a
-                  className="btn btn-primary"
-                  href="https://wa.me/79081673109"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a className="btn btn-primary" href="/contact.html">
                   Выбрать связь
                 </a>
 
@@ -243,9 +236,13 @@ function App() {
               <article className="platform-card">
                 <div className="platform-icon platform-icon-whatsapp" aria-hidden="true">
                   <svg viewBox="0 0 64 64" className="platform-svg">
-                    <circle cx="32" cy="30" r="20" fill="currentColor" opacity="0.12" />
+                    <circle cx="32" cy="32" r="18" fill="currentColor" />
                     <path
-                      d="M21 48l2.6-7A18 18 0 1 1 50 30c0 9.9-8.1 18-18 18-3 0-5.9-.7-8.4-2L21 48Zm10.5-23.4c-.5-1.1-1-1.1-1.5-1.1h-1.3c-.4 0-1.1.2-1.7.8-.6.7-2.2 2.1-2.2 5.2 0 3.1 2.3 6 2.6 6.4.3.4 4.5 7.1 11 9.6 5.4 2.1 6.5 1.7 7.6 1.6 1.2-.1 3.7-1.5 4.2-3 .5-1.5.5-2.8.3-3-.2-.2-.8-.4-1.7-.9-.9-.4-5-2.5-5.8-2.8-.8-.3-1.3-.4-1.9.4-.6.9-2.3 2.8-2.8 3.3-.5.6-1.1.6-2 .2-1-.5-4-1.5-7.5-4.8-2.8-2.5-4.6-5.6-5.1-6.5-.5-.9 0-1.4.4-1.9.4-.4.9-1.1 1.3-1.6.4-.6.5-1 .8-1.7.2-.6.1-1.2-.1-1.6-.2-.4-1.8-4.4-2.5-6Z"
+                      d="M25.5 47l2-5.6a15 15 0 1 1 5.4 1A15 15 0 0 1 28 41.4L25.5 47Z"
+                      fill="#ffffff"
+                    />
+                    <path
+                      d="M38.3 35.6c-.4-.2-2.2-1.1-2.5-1.2-.3-.1-.6-.2-.8.2-.2.4-.9 1.2-1.1 1.4-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.2-2-1.2-1.1-2-2.3-2.2-2.7-.2-.4 0-.5.2-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2.1-.4 0-.6-.1-.2-.8-1.8-1-2.5-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.2 2.9 1.2 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.7-.4Z"
                       fill="currentColor"
                     />
                   </svg>
@@ -344,12 +341,7 @@ function App() {
                 <div className="pricing-price">от 15 000 ₽</div>
                 <div className="pricing-period">разовый запуск</div>
 
-                <a
-                  className="pricing-button pricing-button-green"
-                  href="https://wa.me/79081673109"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a className="pricing-button pricing-button-green" href="/contact.html">
                   Обсудить запуск
                 </a>
 
@@ -375,12 +367,7 @@ function App() {
                 <div className="pricing-price">от 35 000 ₽</div>
                 <div className="pricing-period">разовый запуск</div>
 
-                <a
-                  className="pricing-button pricing-button-blue"
-                  href="https://wa.me/79081673109"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a className="pricing-button pricing-button-blue" href="/contact.html">
                   Обсудить запуск
                 </a>
 
