@@ -145,6 +145,7 @@ a {
 .contact-method span {
   color: var(--primary);
   font-weight: 700;
+  overflow-wrap: anywhere;
 }
 
 @media (max-width: 760px) {
