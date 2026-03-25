@@ -33,11 +33,8 @@ function App() {
             <button type="button" onClick={() => scrollToId("faq")}>FAQ</button>
           </nav>
 
-          <a
-            className="header-cta"
-            href="/contact.html"
-          >
-            Связаться 
+          <a className="header-cta" href="/contact.html">
+            Выбрать связь
           </a>
         </div>
       </header>
@@ -63,7 +60,7 @@ function App() {
 
               <div className="hero-actions">
                 <a className="btn btn-primary" href="/contact.html">
-                  Связаться
+                  Выбрать связь
                 </a>
 
                 <button
@@ -544,6 +541,10 @@ function App() {
                   rel="noreferrer"
                 >
                   Написать в WhatsApp
+                </a>
+
+                <a className="contact-email" href="mailto:bots.setup@mail.ru">
+                  bots.setup@mail.ru
                 </a>
 
                 <a className="contact-phone" href="tel:+79081673109">
