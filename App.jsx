@@ -34,7 +34,7 @@ function App() {
           </nav>
 
           <a className="header-cta" href="/contact.html">
-            Выбрать связь
+            Попробовать
           </a>
         </div>
       </header>
@@ -60,7 +60,7 @@ function App() {
 
               <div className="hero-actions">
                 <a className="btn btn-primary" href="/contact.html">
-                  Выбрать связь
+                  Попробовать
                 </a>
 
                 <button
