@@ -81,7 +81,7 @@ function App() {
           <div className="container">
             <div className="section-head">
               <div className="section-kicker">Какие задачи закрывает бот.</div>
-              <h2>Полезен там, где у бизнеса много первичных обращений.</h2>
+              <h2>Бот полезен там, где у бизнеса много первичных обращений.</h2>
               <p>
                 Особенно хорошо работает в нишах, где клиенты задают одинаковые вопросы, записываются,
                 бронируют, оставляют заявку или сначала пишут, а не звонят.
@@ -91,22 +91,22 @@ function App() {
             <div className="cards-grid cards-grid-4">
               <article className="info-card">
                 <h3>Запись и бронь.</h3>
-                <p>Салоны, студии, клиники, базы отдыха, лофты и офлайн-сервисы.</p>
+                <p>Салоны, студии, клиники, лофты, базы отдыха, офлайн-сервисы.</p>
               </article>
 
               <article className="info-card">
                 <h3>Первичный бриф.</h3>
-                <p>Юристы, агентства, консалтинг, digital-студии и сервисные офисы.</p>
+                <p>Юристы, агентства, консалтинг, digital-студии, сервисные офисы.</p>
               </article>
 
               <article className="info-card">
                 <h3>FAQ и фильтрация.</h3>
-                <p>Бизнесы с повторяющимися вопросами до покупки или перед визитом.</p>
+                <p>Бизнесы с частыми вопросами до покупки или перед визитом.</p>
               </article>
 
               <article className="info-card">
                 <h3>Работа с входящими.</h3>
-                <p>Там, где клиенту удобнее написать в мессенджер, чем звонить.</p>
+                <p>Там, где клиенту проще написать в мессенджер, чем звонить.</p>
               </article>
             </div>
           </div>
@@ -239,56 +239,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section section-soft" id="pricing">
-          <div className="container">
-            <div className="section-head">
-              <div className="section-kicker">Тарифы.</div>
-              <h2>Два формата запуска под разные задачи.</h2>
-              <p>
-                По умолчанию бот размещается на стороне клиента, чтобы у бизнеса сразу были свои доступы,
-                свой хостинг и полный контроль над проектом.
-              </p>
-            </div>
-
-            <div className="pricing-grid">
-              <article className="price-card">
-                <div className="price-label">Базовый.</div>
-                <div className="price-value">от 20 000 до 25 000 ₽.</div>
-                <p className="price-text">
-                  Подходит, если нужен основной рабочий сценарий: приём обращений, запись, выбор услуги,
-                  FAQ и передача заявки в работу.
-                </p>
-
-                <ul className="price-list">
-                  <li>Интеграция логики под бизнес.</li>
-                  <li>Запись, бронь или приём заявки.</li>
-                  <li>Базовые ответы на частые вопросы.</li>
-                  <li>Сбор контакта и структурированное обращение.</li>
-                  <li>Размещение по умолчанию на стороне клиента.</li>
-                </ul>
-              </article>
-
-              <article className="price-card price-card-accent">
-                <div className="price-label">ПРО.</div>
-                <div className="price-value">от 30 000 до 35 000 ₽.</div>
-                <p className="price-text">
-                  Подходит, если нужна более гибкая логика: дополнительные ветки, подтверждения, маршруты,
-                  несколько сценариев и сопровождение после запуска.
-                </p>
-
-                <ul className="price-list">
-                  <li>Всё из базового.</li>
-                  <li>Расширенная логика и дополнительные ветки.</li>
-                  <li>Сценарии подтверждения, переноса, новых гостей.</li>
-                  <li>Более глубокая настройка под процесс бизнеса.</li>
-                  <li>Первый месяц сопровождения после запуска.</li>
-                </ul>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section className="section" id="faq">
+        <section className="section section-soft" id="faq">
           <div className="container">
             <div className="section-head">
               <div className="section-kicker">FAQ.</div>
