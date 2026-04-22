@@ -59,7 +59,7 @@ function App() {
 
                 <div className="hero-list">
                   <div className="hero-list-item">Новая заявка</div>
-                  <div className="hero-list-item">Выбор сценария или услуги</div>
+                  <div className="hero-list-item">Выбор услуги или сценария</div>
                   <div className="hero-list-item">Сбор контакта и уточнение задачи</div>
                   <div className="hero-list-item">Передача готового обращения в работу</div>
                 </div>
@@ -289,7 +289,10 @@ function App() {
             <div className="faq-grid">
               <article className="faq-card">
                 <h3>Сколько занимает запуск</h3>
-                <p>Зависит от сложности сценария. Базовую версию можно собрать быстрее, сложные решения требуют больше этапов и тестов.</p>
+                <p>
+                  Зависит от сложности сценария. Базовую версию можно собрать быстрее, сложные решения
+                  требуют больше этапов и тестов.
+                </p>
               </article>
 
               <article className="faq-card">
@@ -304,7 +307,10 @@ function App() {
 
               <article className="faq-card">
                 <h3>Подходит ли это маленькому бизнесу</h3>
-                <p>Да, если у бизнеса уже есть входящие обращения, типовые вопросы, бронь, запись или заявки через переписку.</p>
+                <p>
+                  Да, если у бизнеса уже есть входящие обращения, типовые вопросы, бронь, запись или заявки
+                  через переписку.
+                </p>
               </article>
 
               <article className="faq-card">
