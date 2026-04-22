@@ -16,7 +16,7 @@ function App() {
 
           <a
             className="btn btn-small"
-            href="https://t.me/"
+            href="https://t.me/tgbotcase"
             target="_blank"
             rel="noreferrer"
           >
@@ -40,7 +40,7 @@ function App() {
               <div className="hero-actions">
                 <a
                   className="btn"
-                  href="https://t.me/"
+                  href="https://t.me/tgbotcase"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -48,7 +48,7 @@ function App() {
                 </a>
                 <a
                   className="btn btn-secondary"
-                  href="https://t.me/"
+                  href="https://t.me/tgbotcase"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -340,7 +340,7 @@ function App() {
             <div className="final-actions">
               <a
                 className="btn"
-                href="https://t.me/"
+                href="https://t.me/tgbotcase"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -348,7 +348,7 @@ function App() {
               </a>
               <a
                 className="btn btn-secondary"
-                href="https://t.me/"
+                href="https://t.me/tgbotcase"
                 target="_blank"
                 rel="noreferrer"
               >
