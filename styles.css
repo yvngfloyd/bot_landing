@@ -739,6 +739,64 @@ button {
   min-width: 250px;
 }
 
+.site-footer {
+  padding: 10px 0 70px;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-brand-block {
+  width: 100%;
+  max-width: 520px;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.footer-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  background: transparent;
+}
+
+.footer-brand-text {
+  font-family: "Sora", "Inter", sans-serif;
+  font-size: 54px;
+  line-height: 0.95;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  color: var(--text);
+}
+
+.footer-subtitle {
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.footer-line {
+  width: 100%;
+  height: 1px;
+  margin: 42px 0 26px;
+  background: var(--line);
+}
+
+.footer-bottom {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 @media (max-width: 1100px) {
   .hero-grid,
   .steps,
@@ -855,6 +913,26 @@ button {
   .chat-bubble {
     font-size: 16px;
   }
+
+  .site-footer {
+    padding: 0 0 56px;
+  }
+
+  .footer-brand-text {
+    font-size: 38px;
+  }
+
+  .footer-subtitle {
+    font-size: 16px;
+  }
+
+  .footer-line {
+    margin: 30px 0 20px;
+  }
+
+  .footer-bottom {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -868,6 +946,19 @@ button {
 
   .section-head h2,
   .final-box h2 {
+    font-size: 30px;
+  }
+
+  .footer-brand {
+    gap: 10px;
+  }
+
+  .footer-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-brand-text {
     font-size: 30px;
   }
 }
