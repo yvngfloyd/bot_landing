@@ -342,9 +342,9 @@ function App() {
     <>
       <header className="header">
         <div className="container nav">
-          <a className="brand" href="#top" aria-label="b2bots">
-            <img src="/logobot.png" alt="b2bots" className="brand-logo" />
-            <div className="brand-text">b2bots</div>
+          <a className="brand" href="#top" aria-label="B2Bots">
+            <img src="/logobot.png" alt="B2Bots" className="brand-logo" />
+            <div className="brand-text">B2Bots</div>
           </a>
 
           <nav className="nav-links">
