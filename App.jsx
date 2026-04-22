@@ -239,7 +239,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section section-soft" id="faq">
+        <section className="section" id="faq">
           <div className="container">
             <div className="section-head">
               <div className="section-kicker">FAQ.</div>
