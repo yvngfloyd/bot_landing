@@ -527,7 +527,7 @@ function App() {
               <div className="contact-actions">
                 <a
                   className="btn btn-primary"
-                  href="https://t.me/yevgeniyf1oyd"
+                  href="https://t.me/tgbotsetup"
                   target="_blank"
                   rel="noreferrer"
                 >
