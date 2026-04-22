@@ -166,6 +166,9 @@ const content = {
       "Разберу ваш процесс, скажу где бот даст реальную пользу и предложу понятную схему под ваш формат заявок, общения и обработки входящих",
     finalBtn1: "Обсудить задачу",
     finalBtn2: "Написать в Telegram",
+
+    footerSubtitle: "Боты для бизнеса под заявки, запись и обработку входящих",
+    footerCopyright: "© 2026 b2bots. Все права защищены",
   },
 
   en: {
@@ -331,6 +334,9 @@ const content = {
       "I will review your process, show where a bot brings real value and suggest a clear flow for your inbound communication",
     finalBtn1: "Discuss project",
     finalBtn2: "Message on Telegram",
+
+    footerSubtitle: "Bots for business lead capture, booking and inbound handling",
+    footerCopyright: "© 2026 b2bots. All rights reserved",
   },
 };
 
@@ -714,6 +720,25 @@ function App() {
             </div>
           </div>
         </section>
+
+        <footer className="site-footer">
+          <div className="container footer-inner">
+            <div className="footer-brand-block">
+              <a className="footer-brand" href="#top" aria-label="b2bots">
+                <img src="/logobot.png" alt="b2bots" className="footer-logo" />
+                <span className="footer-brand-text">b2bots</span>
+              </a>
+
+              <p className="footer-subtitle">{t.footerSubtitle}</p>
+            </div>
+
+            <div className="footer-line"></div>
+
+            <div className="footer-bottom">
+              <span>{t.footerCopyright}</span>
+            </div>
+          </div>
+        </footer>
       </main>
     </>
   );
