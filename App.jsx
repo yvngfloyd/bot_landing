@@ -5,7 +5,10 @@ function App() {
     <>
       <header className="header">
         <div className="container nav">
-          <div className="logo">b2bots</div>
+          <a className="brand" href="#top" aria-label="b2bots">
+            <img src="/logobot.png" alt="b2bots" className="brand-logo" />
+            <div className="brand-text">b2bots</div>
+          </a>
 
           <nav className="nav-links">
             <a href="#solutions">Решения</a>
@@ -25,13 +28,13 @@ function App() {
         </div>
       </header>
 
-      <main>
+      <main id="top">
         <section className="hero section">
           <div className="container hero-grid">
             <div className="hero-content">
               <div className="eyebrow">Telegram, MAX и WhatsApp</div>
 
-              <h1>
+              <h1 className="hero-title">
                 Боты для бизнеса,
                 <br />
                 которые принимают обращения
