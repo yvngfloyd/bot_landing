@@ -1,7 +1,6 @@
 :root {
   --bg: #f3f6fb;
   --surface: #ffffff;
-  --surface-dark: #0f172a;
   --text: #0f172a;
   --text-dark: #ffffff;
   --muted: #667085;
@@ -91,7 +90,7 @@ a {
   padding: 0 22px;
   border-radius: 999px;
   font-weight: 700;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn:hover,
@@ -278,7 +277,6 @@ a {
 
 .info-card,
 .feature-card,
-.platform-card,
 .step-card,
 .faq-card,
 .dark-card {
@@ -288,7 +286,6 @@ a {
 
 .info-card,
 .feature-card,
-.platform-card,
 .step-card,
 .faq-card {
   background: var(--surface);
@@ -303,7 +300,6 @@ a {
 
 .info-card h3,
 .feature-card h3,
-.platform-card h3,
 .step-card h3,
 .faq-card h3,
 .dark-card h3 {
@@ -315,7 +311,6 @@ a {
 
 .info-card p,
 .feature-card p,
-.platform-card p,
 .step-card p,
 .faq-card p {
   margin: 0;
@@ -329,8 +324,7 @@ a {
   line-height: 1.72;
 }
 
-.feature-icon,
-.platform-icon {
+.feature-icon {
   width: 56px;
   height: 56px;
   border-radius: 16px;
@@ -483,10 +477,7 @@ a {
 }
 
 @media (max-width: 980px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-  }
-
+  .hero-grid,
   .cards-grid-3,
   .pricing-grid,
   .faq-grid,
@@ -545,7 +536,6 @@ a {
 
   .info-card,
   .feature-card,
-  .platform-card,
   .step-card,
   .faq-card,
   .dark-card,
