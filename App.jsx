@@ -35,11 +35,10 @@ function App() {
               <div className="eyebrow">Telegram, MAX и WhatsApp</div>
 
               <h1 className="hero-title">
-                Боты для бизнеса,
+                Пока вы заняты, заявки остывают
                 <br />
-                которые принимают обращения
-                <br />
-                и доводят клиента до заявки
+                Бот примет обращение сразу
+                
               </h1>
 
               <p className="hero-text">
