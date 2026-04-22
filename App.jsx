@@ -1,5 +1,14 @@
 import React from "react";
 
+function App() {
+  return (
+    <>
+      {/App.jsx/}
+    </>
+  );
+}
+
+export default App;
 
 
 export default App;
