@@ -8,25 +8,28 @@ const content = {
     navFaq: "FAQ",
     navDiscuss: "Обсудить задачу",
 
-    heroTitle1: "Теряете клиентов в переписке?",
+    heroTitle1: "Теряете клиентов в переписке",
     heroTitle2: "Бот возьмёт входящие на себя",
     heroText:
       "Разрабатываю ботов для бизнеса, которые отвечают на частые вопросы, собирают контакты, уточняют запрос и передают в работу уже готовые обращения",
     heroBtn1: "Получить схему под бизнес",
-    heroBtn2: "Написать в Telegram",
-    heroTag1: "Приём входящих",
-    heroTag2: "FAQ и фильтрация",
-    heroTag3: "Запись и бронь",
-    heroTag4: "Сбор заявок",
 
-    heroCardLabel: "Сценарий обработки обращения",
-    heroCardTitle: "Бот берёт на себя первый этап коммуникации",
+    heroCardLabel: "Как это выглядит в работе",
+    heroCardTitle: "Бот обрабатывает первое обращение вместо менеджера",
     heroCardText:
-      "Клиент пишет в мессенджер, бот отвечает, уточняет задачу, собирает контакт и передаёт менеджеру уже понятный запрос вместо хаотичной переписки",
-    flow1: "Новое обращение",
-    flow2: "Уточнение потребности",
-    flow3: "Сбор контакта и данных",
-    flow4: "Передача заявки в работу",
+      "Пока команда занята, бот отвечает клиенту, уточняет запрос и передаёт менеджеру уже понятную заявку",
+
+    chatBot: "Бот",
+    chatClient: "Клиент",
+    chatManager: "Менеджер",
+
+    msg1: "Здравствуйте! Подскажите стоимость и как записаться",
+    msg2: "Добрый день 👋 Помогу с этим. Какая услуга вас интересует",
+    msg3: "Нужна консультация и ближайшее свободное время",
+    msg4: "Отлично. Подскажите ваше имя и номер для подтверждения",
+    msg5: "Анна, +7 900 123 45 67",
+    msg6: "Готово. Передаю менеджеру оформленное обращение",
+    msg7: "Получил заявку: Анна, консультация, просит ближайшее время",
 
     solutionsEyebrow: "Основные решения",
     solutionsTitle:
@@ -177,20 +180,23 @@ const content = {
     heroText:
       "I build bots for businesses that answer common questions, collect contacts, clarify requests and pass ready-to-handle leads to your team",
     heroBtn1: "Get a bot outline",
-    heroBtn2: "Message on Telegram",
-    heroTag1: "Inbound handling",
-    heroTag2: "FAQ and filtering",
-    heroTag3: "Booking and scheduling",
-    heroTag4: "Lead capture",
 
-    heroCardLabel: "Inbound flow scenario",
-    heroCardTitle: "The bot takes over the first stage of communication",
+    heroCardLabel: "How it works",
+    heroCardTitle: "The bot handles the first contact instead of the manager",
     heroCardText:
-      "A client messages your business, the bot replies, clarifies the need, collects contact details and passes a structured request instead of a messy chat",
-    flow1: "New message",
-    flow2: "Need clarification",
-    flow3: "Contact and details",
-    flow4: "Lead handoff",
+      "While your team is busy, the bot replies to the client, clarifies the request and sends the manager a structured lead",
+
+    chatBot: "Bot",
+    chatClient: "Client",
+    chatManager: "Manager",
+
+    msg1: "Hello, can you tell me the price and how to book",
+    msg2: "Hi 👋 Sure. What service are you interested in",
+    msg3: "I need a consultation and the nearest available time",
+    msg4: "Great. Please send your name and phone number",
+    msg5: "Anna, +7 900 123 45 67",
+    msg6: "Done. Sending the completed request to the manager",
+    msg7: "Lead received: Anna, consultation, wants the nearest available slot",
 
     solutionsEyebrow: "Core solutions",
     solutionsTitle: "The bot is built around your process, not just automation",
@@ -342,9 +348,9 @@ function App() {
     <>
       <header className="header">
         <div className="container nav">
-          <a className="brand" href="#top" aria-label="B2Bots">
-            <img src="/logobot.png" alt="B2Bots" className="brand-logo" />
-            <div className="brand-text">B2Bots</div>
+          <a className="brand" href="#top" aria-label="b2bots">
+            <img src="/logobot.png" alt="b2bots" className="brand-logo" />
+            <div className="brand-text">b2bots</div>
           </a>
 
           <nav className="nav-links">
@@ -424,35 +430,49 @@ function App() {
                 >
                   {t.heroBtn1}
                 </a>
-
-                <a
-                  className="btn btn-secondary"
-                  href="https://t.me/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {t.heroBtn2}
-                </a>
-              </div>
-
-              <div className="hero-points">
-                <span>{t.heroTag1}</span>
-                <span>{t.heroTag2}</span>
-                <span>{t.heroTag3}</span>
-                <span>{t.heroTag4}</span>
               </div>
             </div>
 
-            <div className="hero-card">
+            <div className="hero-card chat-card">
               <div className="card-label">{t.heroCardLabel}</div>
               <h3>{t.heroCardTitle}</h3>
               <p>{t.heroCardText}</p>
 
-              <div className="flow">
-                <div className="flow-item">{t.flow1}</div>
-                <div className="flow-item">{t.flow2}</div>
-                <div className="flow-item">{t.flow3}</div>
-                <div className="flow-item">{t.flow4}</div>
+              <div className="chat-window">
+                <div className="chat-message client">
+                  <div className="chat-role">{t.chatClient}</div>
+                  <div className="chat-bubble">{t.msg1}</div>
+                </div>
+
+                <div className="chat-message bot">
+                  <div className="chat-role">{t.chatBot}</div>
+                  <div className="chat-bubble">{t.msg2}</div>
+                </div>
+
+                <div className="chat-message client">
+                  <div className="chat-role">{t.chatClient}</div>
+                  <div className="chat-bubble">{t.msg3}</div>
+                </div>
+
+                <div className="chat-message bot">
+                  <div className="chat-role">{t.chatBot}</div>
+                  <div className="chat-bubble">{t.msg4}</div>
+                </div>
+
+                <div className="chat-message client">
+                  <div className="chat-role">{t.chatClient}</div>
+                  <div className="chat-bubble">{t.msg5}</div>
+                </div>
+
+                <div className="chat-message bot">
+                  <div className="chat-role">{t.chatBot}</div>
+                  <div className="chat-bubble">{t.msg6}</div>
+                </div>
+
+                <div className="chat-message manager">
+                  <div className="chat-role">{t.chatManager}</div>
+                  <div className="chat-bubble manager-bubble">{t.msg7}</div>
+                </div>
               </div>
             </div>
           </div>
