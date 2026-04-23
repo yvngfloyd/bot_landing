@@ -6,6 +6,7 @@ const content = {
     navSystems: "Возможности",
     navLaunch: "Запуск",
     navFaq: "FAQ",
+    navPricing: "Тарифы",
     navDiscuss: "Обсудить проект",
 
     heroTitle1: "Telegram-боты для бизнеса",
@@ -166,7 +167,7 @@ const content = {
     finalText:
       "Разберу ваш процесс, предложу логику решения и покажу, как можно реализовать Telegram-бота под ваш бизнес с нужным уровнем сложности",
     finalBtn1: "Обсудить проект",
-    finalBtn2: "Посмотреть вариант решения",
+    finalBtn2: "Посмотреть тарифы",
 
     footerSubtitle:
       "Telegram-боты для бизнеса, автоматизации процессов и решений с AI-усилением",
@@ -178,6 +179,7 @@ const content = {
     navSystems: "Capabilities",
     navLaunch: "Launch",
     navFaq: "FAQ",
+    navPricing: "Pricing",
     navDiscuss: "Discuss project",
 
     heroTitle1: "Telegram bots for business",
@@ -338,7 +340,7 @@ const content = {
     finalText:
       "I will review your process, suggest a solution logic and show how a Telegram bot can be implemented for your business with the right level of complexity",
     finalBtn1: "Discuss project",
-    finalBtn2: "See solution option",
+    finalBtn2: "View pricing",
 
     footerSubtitle:
       "Telegram bots for business, process automation and AI-enhanced solutions",
@@ -370,6 +372,7 @@ function App() {
             <a href="#systems">{t.navSystems}</a>
             <a href="#launch">{t.navLaunch}</a>
             <a href="#faq">{t.navFaq}</a>
+            <a href="/pricing.html">{t.navPricing}</a>
           </nav>
 
           <div className="header-actions">
@@ -717,9 +720,7 @@ function App() {
 
               <a
                 className="btn btn-secondary"
-                href="https://t.me/"
-                target="_blank"
-                rel="noreferrer"
+                href="/pricing.html"
               >
                 {t.finalBtn2}
               </a>
