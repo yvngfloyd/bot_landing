@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 const content = {
   ru: {
@@ -33,8 +33,7 @@ const content = {
     msg7: "Запрос понятен: Telegram-бот под заявки, FAQ, CRM и автоматизацию",
 
     solutionsEyebrow: "Основные решения",
-    solutionsTitle:
-      "Бот собирается под конкретную бизнес-задачу, а не по шаблону",
+    solutionsTitle: "Бот собирается под конкретную бизнес-задачу, а не по шаблону",
     solutionsText:
       "Логика, структура и функции зависят от того, что именно нужно бизнесу: обработка заявок, автоматизация, интеграции, сервисные сценарии или AI-усиление",
 
@@ -162,8 +161,7 @@ const content = {
       "Да, можно запустить базовую версию, а потом постепенно расширять её под новые задачи",
 
     finalEyebrow: "Финальный шаг",
-    finalTitle:
-      "Покажу, какого Telegram-бота можно собрать именно под вашу задачу",
+    finalTitle: "Покажу, какого Telegram-бота можно собрать именно под вашу задачу",
     finalText:
       "Разберу ваш процесс, предложу логику решения и покажу, как можно реализовать Telegram-бота под ваш бизнес с нужным уровнем сложности",
     finalBtn1: "Обсудить проект",
@@ -172,6 +170,97 @@ const content = {
     footerSubtitle:
       "Telegram-боты для бизнеса, автоматизации процессов и решений с AI-усилением",
     footerCopyright: "© 2026 b2bots. Все права защищены",
+
+    pricingTitle: "Выберите подходящий формат Telegram-бота под вашу задачу",
+    pricingSubtitle:
+      "Ниже представлены ориентиры по стоимости, составу работ и уровню сложности Проект может быть собран точнее после разбора вашей задачи",
+    pricingBack: "Назад на лендинг",
+    pricingHeroEyebrow: "Тарифы и форматы работы",
+    pricingStepEyebrow: "Как формируется цена",
+    pricingCompareEyebrow: "Сравнение",
+    pricingNextEyebrow: "Следующий шаг",
+    pricingCompareTitle: "Что входит в разные уровни проекта",
+    pricingStepTitle: "Стоимость зависит от сложности и состава проекта",
+    pricingStepText:
+      "На итоговую цену влияют сценарии, количество веток, интеграции, бизнес-логика, AI-функции и то, нужно ли развивать проект поэтапно",
+    pricingFinalTitle: "Могу предложить подходящий формат под вашу задачу",
+    pricingFinalText:
+      "Опишите, что именно должен делать Telegram-бот, и я помогу понять, какой вариант будет логичнее по структуре и бюджету",
+    pricingFinalBtn1: "Обсудить проект",
+    pricingFinalBtn2: "Вернуться на лендинг",
+
+    starter: "Старт",
+    optimal: "Оптимально",
+    custom: "Индивидуально",
+
+    priceCard1Title: "Базовый бот",
+    priceCard1Price: "от 25 000 ₽",
+    priceCard1Desc:
+      "Для простых задач, где нужен понятный Telegram-бот без сложной архитектуры",
+
+    priceCard2Title: "Бизнес-бот",
+    priceCard2Price: "от 45 000 ₽",
+    priceCard2Desc:
+      "Для бизнеса, которому нужен более серьёзный сценарий с автоматизацией и логикой",
+
+    priceCard3Title: "Сложное решение",
+    priceCard3Price: "от 70 000 ₽",
+    priceCard3Desc:
+      "Для нестандартных задач, сложных механик, большого объёма логики и AI-усиления",
+
+    priceFeature1_1: "Простой сценарий до нескольких веток",
+    priceFeature1_2: "Приём заявок или FAQ",
+    priceFeature1_3: "Сбор данных через формы",
+    priceFeature1_4: "Уведомления в Telegram",
+    priceFeature1_5: "Базовая настройка и тестирование",
+
+    priceFeature2_1: "Сложная логика и ветвления",
+    priceFeature2_2: "Обработка обращений и заявок",
+    priceFeature2_3: "Интеграции с таблицами, CRM или API",
+    priceFeature2_4: "Автоматизация части процессов",
+    priceFeature2_5: "Расширенное тестирование и доработка",
+
+    priceFeature3_1: "Кастомная архитектура под задачу",
+    priceFeature3_2: "Несколько пользовательских сценариев",
+    priceFeature3_3: "Интеграции и сложная логика",
+    priceFeature3_4: "AI-функции при необходимости",
+    priceFeature3_5: "Поэтапная сборка и развитие проекта",
+
+    discussThis: "Обсудить этот вариант",
+    chooseThis: "Выбрать этот формат",
+    requestCalc: "Запросить расчёт",
+
+    compareCol1: "Функция",
+    compareCol2: "Базовый",
+    compareCol3: "Бизнес",
+    compareCol4: "Сложное решение",
+
+    compareRow1: "Telegram-бот под ключ",
+    compareRow2: "Сбор заявок и данных",
+    compareRow3: "Ветвящаяся логика",
+    compareRow4: "Интеграции",
+    compareRow5: "Автоматизация процессов",
+    compareRow6: "AI-функции",
+    compareRow7: "Развитие проекта",
+
+    yes: "Да",
+    basic: "Базовая",
+    expanded: "Расширенная",
+    individual: "Индивидуальная",
+    minimal: "Минимально",
+    partly: "Частично",
+    optional: "Опционально",
+    byRequest: "По запросу",
+
+    priceStep1Title: "Разбираем задачу",
+    priceStep1Text:
+      "Понимаем, что именно должен делать бот и какую пользу он должен дать бизнесу",
+    priceStep2Title: "Определяем состав",
+    priceStep2Text:
+      "Смотрим, нужна ли логика, интеграции, AI, внутренние сценарии и дополнительные функции",
+    priceStep3Title: "Формируем предложение",
+    priceStep3Text:
+      "После этого предлагаю подходящий формат работы под ваш проект и бюджет",
   },
 
   en: {
@@ -189,7 +278,8 @@ const content = {
     heroBtn1: "Discuss project",
 
     heroCardLabel: "How it works",
-    heroCardTitle: "The bot handles part of the process without constant team involvement",
+    heroCardTitle:
+      "The bot handles part of the process without constant team involvement",
     heroCardText:
       "A Telegram bot can receive requests, collect data, guide users through flows, automate internal actions and, when needed, be enhanced with AI",
 
@@ -345,84 +435,172 @@ const content = {
     footerSubtitle:
       "Telegram bots for business, process automation and AI-enhanced solutions",
     footerCopyright: "© 2026 b2bots. All rights reserved",
+
+    pricingTitle: "Choose the right Telegram bot format for your task",
+    pricingSubtitle:
+      "Below are guideline prices, project scope and complexity levels The final estimate can be refined after reviewing your task",
+    pricingBack: "Back to landing",
+    pricingHeroEyebrow: "Pricing and work formats",
+    pricingStepEyebrow: "How pricing is formed",
+    pricingCompareEyebrow: "Comparison",
+    pricingNextEyebrow: "Next step",
+    pricingCompareTitle: "What is included in different project levels",
+    pricingStepTitle: "The cost depends on complexity and project scope",
+    pricingStepText:
+      "The final cost depends on flows, number of branches, integrations, business logic, AI functions and whether the project should be expanded in stages",
+    pricingFinalTitle: "I can suggest the right format for your task",
+    pricingFinalText:
+      "Describe what exactly the Telegram bot should do, and I will help define the most logical option in terms of structure and budget",
+    pricingFinalBtn1: "Discuss project",
+    pricingFinalBtn2: "Back to landing",
+
+    starter: "Start",
+    optimal: "Recommended",
+    custom: "Custom",
+
+    priceCard1Title: "Basic bot",
+    priceCard1Price: "from ₽25,000",
+    priceCard1Desc:
+      "For simple tasks where a clear Telegram bot is needed without complex architecture",
+
+    priceCard2Title: "Business bot",
+    priceCard2Price: "from ₽45,000",
+    priceCard2Desc:
+      "For businesses that need a more serious scenario with automation and logic",
+
+    priceCard3Title: "Complex solution",
+    priceCard3Price: "from ₽70,000",
+    priceCard3Desc:
+      "For нестандартных задач, complex mechanics, large logic scope and AI enhancement",
+
+    priceFeature1_1: "Simple scenario with several branches",
+    priceFeature1_2: "Lead capture or FAQ",
+    priceFeature1_3: "Data collection through forms",
+    priceFeature1_4: "Telegram notifications",
+    priceFeature1_5: "Basic setup and testing",
+
+    priceFeature2_1: "Complex logic and branching",
+    priceFeature2_2: "Lead and request handling",
+    priceFeature2_3: "Integrations with sheets, CRM or API",
+    priceFeature2_4: "Partial process automation",
+    priceFeature2_5: "Extended testing and refinement",
+
+    priceFeature3_1: "Custom architecture for the task",
+    priceFeature3_2: "Multiple user scenarios",
+    priceFeature3_3: "Integrations and complex logic",
+    priceFeature3_4: "AI functions when needed",
+    priceFeature3_5: "Phased build and project growth",
+
+    discussThis: "Discuss this option",
+    chooseThis: "Choose this format",
+    requestCalc: "Request estimate",
+
+    compareCol1: "Feature",
+    compareCol2: "Basic",
+    compareCol3: "Business",
+    compareCol4: "Complex solution",
+
+    compareRow1: "Turnkey Telegram bot",
+    compareRow2: "Lead and data collection",
+    compareRow3: "Branching logic",
+    compareRow4: "Integrations",
+    compareRow5: "Process automation",
+    compareRow6: "AI functions",
+    compareRow7: "Project growth",
+
+    yes: "Yes",
+    basic: "Basic",
+    expanded: "Extended",
+    individual: "Custom",
+    minimal: "Minimal",
+    partly: "Partial",
+    optional: "Optional",
+    byRequest: "On request",
+
+    priceStep1Title: "Analyze the task",
+    priceStep1Text:
+      "We define what exactly the bot should do and what business value it should deliver",
+    priceStep2Title: "Define the scope",
+    priceStep2Text:
+      "We determine whether logic, integrations, AI, internal flows and extra functions are needed",
+    priceStep3Title: "Prepare the offer",
+    priceStep3Text:
+      "After that I suggest the right work format for your project and budget",
   },
 };
 
-function App() {
-  const [theme, setTheme] = useState("dark");
-  const [lang, setLang] = useState("ru");
+function Header({ t, theme, setTheme, lang, setLang }) {
+  return (
+    <header className="header">
+      <div className="container nav">
+        <a className="brand" href="/" aria-label="b2bots">
+          <img src="/logobot.png" alt="b2bots" className="brand-logo" />
+          <div className="brand-text">b2bots</div>
+        </a>
 
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-  }, [theme]);
+        <nav className="nav-links">
+          <a href="/#solutions">{t.navSolutions}</a>
+          <a href="/#systems">{t.navSystems}</a>
+          <a href="/#launch">{t.navLaunch}</a>
+          <a href="/#faq">{t.navFaq}</a>
+          <a href="/pricing">{t.navPricing}</a>
+        </nav>
 
-  const t = content[lang];
+        <div className="header-actions">
+          <div className="mini-switches">
+            <button
+              className={`mini-btn ${theme === "dark" ? "active" : ""}`}
+              onClick={() => setTheme("dark")}
+              type="button"
+              aria-label="Dark theme"
+            >
+              🌙
+            </button>
 
+            <button
+              className={`mini-btn ${theme === "light" ? "active" : ""}`}
+              onClick={() => setTheme("light")}
+              type="button"
+              aria-label="Light theme"
+            >
+              ☀️
+            </button>
+
+            <button
+              className={`mini-btn ${lang === "ru" ? "active" : ""}`}
+              onClick={() => setLang("ru")}
+              type="button"
+            >
+              RU
+            </button>
+
+            <button
+              className={`mini-btn ${lang === "en" ? "active" : ""}`}
+              onClick={() => setLang("en")}
+              type="button"
+            >
+              EN
+            </button>
+          </div>
+
+          <a
+            className="btn btn-small"
+            href="https://t.me/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {t.navDiscuss}
+          </a>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+function LandingPage({ t, theme, setTheme, lang, setLang }) {
   return (
     <>
-      <header className="header">
-        <div className="container nav">
-          <a className="brand" href="#top" aria-label="b2bots">
-            <img src="/logobot.png" alt="b2bots" className="brand-logo" />
-            <div className="brand-text">b2bots</div>
-          </a>
-
-          <nav className="nav-links">
-            <a href="#solutions">{t.navSolutions}</a>
-            <a href="#systems">{t.navSystems}</a>
-            <a href="#launch">{t.navLaunch}</a>
-            <a href="#faq">{t.navFaq}</a>
-            <a href="/pricing.html">{t.navPricing}</a>
-          </nav>
-
-          <div className="header-actions">
-            <div className="mini-switches">
-              <button
-                className={`mini-btn ${theme === "dark" ? "active" : ""}`}
-                onClick={() => setTheme("dark")}
-                type="button"
-                aria-label="Dark theme"
-              >
-                🌙
-              </button>
-
-              <button
-                className={`mini-btn ${theme === "light" ? "active" : ""}`}
-                onClick={() => setTheme("light")}
-                type="button"
-                aria-label="Light theme"
-              >
-                ☀️
-              </button>
-
-              <button
-                className={`mini-btn ${lang === "ru" ? "active" : ""}`}
-                onClick={() => setLang("ru")}
-                type="button"
-              >
-                RU
-              </button>
-
-              <button
-                className={`mini-btn ${lang === "en" ? "active" : ""}`}
-                onClick={() => setLang("en")}
-                type="button"
-              >
-                EN
-              </button>
-            </div>
-
-            <a
-              className="btn btn-small"
-              href="https://t.me/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {t.navDiscuss}
-            </a>
-          </div>
-        </div>
-      </header>
+      <Header t={t} theme={theme} setTheme={setTheme} lang={lang} setLang={setLang} />
 
       <main id="top">
         <section className="hero section">
@@ -718,10 +896,7 @@ function App() {
                 {t.finalBtn1}
               </a>
 
-              <a
-                className="btn btn-secondary"
-                href="/pricing.html"
-              >
+              <a className="btn btn-secondary" href="/pricing">
                 {t.finalBtn2}
               </a>
             </div>
@@ -731,7 +906,7 @@ function App() {
         <footer className="site-footer">
           <div className="container footer-inner">
             <div className="footer-brand-block">
-              <a className="footer-brand" href="#top" aria-label="b2bots">
+              <a className="footer-brand" href="/" aria-label="b2bots">
                 <img src="/logobot.png" alt="b2bots" className="footer-logo" />
                 <span className="footer-brand-text">b2bots</span>
               </a>
@@ -748,6 +923,231 @@ function App() {
         </footer>
       </main>
     </>
+  );
+}
+
+function PricingPage({ t, theme, setTheme, lang, setLang }) {
+  return (
+    <>
+      <Header t={t} theme={theme} setTheme={setTheme} lang={lang} setLang={setLang} />
+
+      <main className="pricing-page">
+        <section className="pricing-hero section">
+          <div className="container">
+            <div className="eyebrow">{t.pricingHeroEyebrow}</div>
+            <h1 className="pricing-title">{t.pricingTitle}</h1>
+            <p className="pricing-subtitle">{t.pricingSubtitle}</p>
+          </div>
+        </section>
+
+        <section className="pricing-cards-section section">
+          <div className="container pricing-grid">
+            <article className="price-card">
+              <div className="price-badge">{t.starter}</div>
+              <h2>{t.priceCard1Title}</h2>
+              <div className="price">{t.priceCard1Price}</div>
+              <p className="price-desc">{t.priceCard1Desc}</p>
+
+              <ul className="feature-list">
+                <li>{t.priceFeature1_1}</li>
+                <li>{t.priceFeature1_2}</li>
+                <li>{t.priceFeature1_3}</li>
+                <li>{t.priceFeature1_4}</li>
+                <li>{t.priceFeature1_5}</li>
+              </ul>
+
+              <a className="card-btn" href="https://t.me/" target="_blank" rel="noreferrer">
+                {t.discussThis}
+              </a>
+            </article>
+
+            <article className="price-card featured">
+              <div className="price-badge">{t.optimal}</div>
+              <h2>{t.priceCard2Title}</h2>
+              <div className="price">{t.priceCard2Price}</div>
+              <p className="price-desc">{t.priceCard2Desc}</p>
+
+              <ul className="feature-list">
+                <li>{t.priceFeature2_1}</li>
+                <li>{t.priceFeature2_2}</li>
+                <li>{t.priceFeature2_3}</li>
+                <li>{t.priceFeature2_4}</li>
+                <li>{t.priceFeature2_5}</li>
+              </ul>
+
+              <a className="card-btn primary" href="https://t.me/" target="_blank" rel="noreferrer">
+                {t.chooseThis}
+              </a>
+            </article>
+
+            <article className="price-card">
+              <div className="price-badge">{t.custom}</div>
+              <h2>{t.priceCard3Title}</h2>
+              <div className="price">{t.priceCard3Price}</div>
+              <p className="price-desc">{t.priceCard3Desc}</p>
+
+              <ul className="feature-list">
+                <li>{t.priceFeature3_1}</li>
+                <li>{t.priceFeature3_2}</li>
+                <li>{t.priceFeature3_3}</li>
+                <li>{t.priceFeature3_4}</li>
+                <li>{t.priceFeature3_5}</li>
+              </ul>
+
+              <a className="card-btn" href="https://t.me/" target="_blank" rel="noreferrer">
+                {t.requestCalc}
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <section className="compare-section section">
+          <div className="container">
+            <div className="section-head">
+              <div className="eyebrow">{t.pricingCompareEyebrow}</div>
+              <h2>{t.pricingCompareTitle}</h2>
+            </div>
+
+            <div className="compare-table-wrap">
+              <table className="compare-table">
+                <thead>
+                  <tr>
+                    <th>{t.compareCol1}</th>
+                    <th>{t.compareCol2}</th>
+                    <th>{t.compareCol3}</th>
+                    <th>{t.compareCol4}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{t.compareRow1}</td>
+                    <td>{t.yes}</td>
+                    <td>{t.yes}</td>
+                    <td>{t.yes}</td>
+                  </tr>
+                  <tr>
+                    <td>{t.compareRow2}</td>
+                    <td>{t.yes}</td>
+                    <td>{t.yes}</td>
+                    <td>{t.yes}</td>
+                  </tr>
+                  <tr>
+                    <td>{t.compareRow3}</td>
+                    <td>{t.basic}</td>
+                    <td>{t.expanded}</td>
+                    <td>{t.individual}</td>
+                  </tr>
+                  <tr>
+                    <td>{t.compareRow4}</td>
+                    <td>{t.minimal}</td>
+                    <td>{t.yes}</td>
+                    <td>{t.yes}</td>
+                  </tr>
+                  <tr>
+                    <td>{t.compareRow5}</td>
+                    <td>{t.partly}</td>
+                    <td>{t.yes}</td>
+                    <td>{t.yes}</td>
+                  </tr>
+                  <tr>
+                    <td>{t.compareRow6}</td>
+                    <td>{t.optional}</td>
+                    <td>{t.optional}</td>
+                    <td>{t.yes}</td>
+                  </tr>
+                  <tr>
+                    <td>{t.compareRow7}</td>
+                    <td>{t.byRequest}</td>
+                    <td>{t.yes}</td>
+                    <td>{t.yes}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section className="steps-section section">
+          <div className="container">
+            <div className="section-head">
+              <div className="eyebrow">{t.pricingStepEyebrow}</div>
+              <h2>{t.pricingStepTitle}</h2>
+              <p>{t.pricingStepText}</p>
+            </div>
+
+            <div className="steps-grid pricing-steps-grid">
+              <article className="step-item">
+                <div className="step-num">01</div>
+                <h3>{t.priceStep1Title}</h3>
+                <p>{t.priceStep1Text}</p>
+              </article>
+
+              <article className="step-item">
+                <div className="step-num">02</div>
+                <h3>{t.priceStep2Title}</h3>
+                <p>{t.priceStep2Text}</p>
+              </article>
+
+              <article className="step-item">
+                <div className="step-num">03</div>
+                <h3>{t.priceStep3Title}</h3>
+                <p>{t.priceStep3Text}</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="pricing-final section">
+          <div className="container pricing-final-box">
+            <div>
+              <div className="eyebrow">{t.pricingNextEyebrow}</div>
+              <h2>{t.pricingFinalTitle}</h2>
+              <p>{t.pricingFinalText}</p>
+            </div>
+
+            <div className="pricing-final-actions">
+              <a className="btn" href="https://t.me/" target="_blank" rel="noreferrer">
+                {t.pricingFinalBtn1}
+              </a>
+              <a className="btn btn-secondary" href="/">
+                {t.pricingFinalBtn2}
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
+  );
+}
+
+function App() {
+  const [theme, setTheme] = useState("dark");
+  const [lang, setLang] = useState("ru");
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
+  const pathname = useMemo(() => window.location.pathname, []);
+  const isPricing = pathname === "/pricing";
+  const t = content[lang];
+
+  return isPricing ? (
+    <PricingPage
+      t={t}
+      theme={theme}
+      setTheme={setTheme}
+      lang={lang}
+      setLang={setLang}
+    />
+  ) : (
+    <LandingPage
+      t={t}
+      theme={theme}
+      setTheme={setTheme}
+      lang={lang}
+      setLang={setLang}
+    />
   );
 }
 
