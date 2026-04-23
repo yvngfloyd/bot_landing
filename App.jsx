@@ -16,7 +16,8 @@ const content = {
     heroBtn1: "Обсудить проект",
 
     heroCardLabel: "Как это выглядит в работе",
-    heroCardTitle: "Бот закрывает часть процессов без постоянного участия команды",
+    heroCardTitle:
+      "Бот закрывает часть процессов без постоянного участия команды",
     heroCardText:
       "Telegram-бот может принимать обращения, собирать данные, вести клиента по сценарию, автоматизировать внутренние действия и при необходимости усиливаться AI-механикой",
 
@@ -33,7 +34,8 @@ const content = {
     msg7: "Запрос понятен: Telegram-бот под заявки, FAQ, CRM и автоматизацию",
 
     solutionsEyebrow: "Основные решения",
-    solutionsTitle: "Бот собирается под конкретную бизнес-задачу, а не по шаблону",
+    solutionsTitle:
+      "Бот собирается под конкретную бизнес-задачу, а не по шаблону",
     solutionsText:
       "Логика, структура и функции зависят от того, что именно нужно бизнесу: обработка заявок, автоматизация, интеграции, сервисные сценарии или AI-усиление",
 
@@ -62,7 +64,8 @@ const content = {
       "Если нужно, в Telegram-бот можно встроить AI-функции для ответов, анализа, маршрутизации и более гибкой логики",
 
     systemsEyebrow: "Что может Telegram-бот",
-    systemsTitle: "Не просто отвечает, а становится рабочим инструментом внутри бизнеса",
+    systemsTitle:
+      "Не просто отвечает, а становится рабочим инструментом внутри бизнеса",
     systemsText:
       "Бот может быть точкой входа, частью воронки, сервисным интерфейсом, автоматизатором процессов или прослойкой между клиентом, командой и системами",
 
@@ -161,7 +164,8 @@ const content = {
       "Да, можно запустить базовую версию, а потом постепенно расширять её под новые задачи",
 
     finalEyebrow: "Финальный шаг",
-    finalTitle: "Покажу, какого Telegram-бота можно собрать именно под вашу задачу",
+    finalTitle:
+      "Покажу, какого Telegram-бота можно собрать именно под вашу задачу",
     finalText:
       "Разберу ваш процесс, предложу логику решения и покажу, как можно реализовать Telegram-бота под ваш бизнес с нужным уровнем сложности",
     finalBtn1: "Обсудить проект",
@@ -173,8 +177,7 @@ const content = {
 
     pricingTitle: "Выберите подходящий формат Telegram-бота под вашу задачу",
     pricingSubtitle:
-      "Ниже представлены ориентиры по стоимости, составу работ и уровню сложности Проект может быть собран точнее после разбора вашей задачи",
-    pricingBack: "Назад на лендинг",
+      "Ниже представлены ориентиры по стоимости, составу работ и уровню сложности. Проект может быть собран точнее после разбора вашей задачи",
     pricingHeroEyebrow: "Тарифы и форматы работы",
     pricingStepEyebrow: "Как формируется цена",
     pricingCompareEyebrow: "Сравнение",
@@ -438,8 +441,7 @@ const content = {
 
     pricingTitle: "Choose the right Telegram bot format for your task",
     pricingSubtitle:
-      "Below are guideline prices, project scope and complexity levels The final estimate can be refined after reviewing your task",
-    pricingBack: "Back to landing",
+      "Below are guideline prices, project scope and complexity levels. The final estimate can be refined after reviewing your task",
     pricingHeroEyebrow: "Pricing and work formats",
     pricingStepEyebrow: "How pricing is formed",
     pricingCompareEyebrow: "Comparison",
@@ -471,7 +473,7 @@ const content = {
     priceCard3Title: "Complex solution",
     priceCard3Price: "from ₽70,000",
     priceCard3Desc:
-      "For нестандартных задач, complex mechanics, large logic scope and AI enhancement",
+      "For custom tasks, complex mechanics, large logic scope and AI enhancement",
 
     priceFeature1_1: "Simple scenario with several branches",
     priceFeature1_2: "Lead capture or FAQ",
@@ -533,7 +535,7 @@ function Header({ t, theme, setTheme, lang, setLang }) {
   return (
     <header className="header">
       <div className="container nav">
-        <a className="brand" href="/" aria-label="b2bots">
+        <a className="brand" href="/#top" aria-label="b2bots">
           <img src="/logobot.png" alt="b2bots" className="brand-logo" />
           <div className="brand-text">b2bots</div>
         </a>
@@ -602,8 +604,8 @@ function LandingPage({ t, theme, setTheme, lang, setLang }) {
     <>
       <Header t={t} theme={theme} setTheme={setTheme} lang={lang} setLang={setLang} />
 
-      <main id="top">
-        <section className="hero section">
+      <main>
+        <section id="top" className="hero section">
           <div className="container hero-grid">
             <div className="hero-content">
               <h1 className="hero-title">
@@ -906,7 +908,7 @@ function LandingPage({ t, theme, setTheme, lang, setLang }) {
         <footer className="site-footer">
           <div className="container footer-inner">
             <div className="footer-brand-block">
-              <a className="footer-brand" href="/" aria-label="b2bots">
+              <a className="footer-brand" href="/#top" aria-label="b2bots">
                 <img src="/logobot.png" alt="b2bots" className="footer-logo" />
                 <span className="footer-brand-text">b2bots</span>
               </a>
@@ -1109,7 +1111,7 @@ function PricingPage({ t, theme, setTheme, lang, setLang }) {
               <a className="btn" href="https://t.me/" target="_blank" rel="noreferrer">
                 {t.pricingFinalBtn1}
               </a>
-              <a className="btn btn-secondary" href="/">
+              <a className="btn btn-secondary" href="/#top">
                 {t.pricingFinalBtn2}
               </a>
             </div>
@@ -1123,13 +1125,61 @@ function PricingPage({ t, theme, setTheme, lang, setLang }) {
 function App() {
   const [theme, setTheme] = useState("dark");
   const [lang, setLang] = useState("ru");
+  const [pathname, setPathname] = useState(window.location.pathname);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
 
-  const pathname = useMemo(() => window.location.pathname, []);
-  const isPricing = pathname === "/pricing";
+  useEffect(() => {
+    const onPopState = () => {
+      setPathname(window.location.pathname);
+    };
+
+    const onHashChange = () => {
+      setPathname(window.location.pathname);
+    };
+
+    window.addEventListener("popstate", onPopState);
+    window.addEventListener("hashchange", onHashChange);
+
+    return () => {
+      window.removeEventListener("popstate", onPopState);
+      window.removeEventListener("hashchange", onHashChange);
+    };
+  }, []);
+
+  useEffect(() => {
+    const scrollToHash = () => {
+      const hash = window.location.hash;
+      if (!hash) return;
+
+      const id = hash.replace("#", "");
+      let attempts = 0;
+
+      const tryScroll = () => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+          return;
+        }
+
+        attempts += 1;
+        if (attempts < 25) {
+          setTimeout(tryScroll, 80);
+        }
+      };
+
+      setTimeout(tryScroll, 60);
+    };
+
+    scrollToHash();
+
+    window.addEventListener("hashchange", scrollToHash);
+    return () => window.removeEventListener("hashchange", scrollToHash);
+  }, [pathname]);
+
+  const isPricing = useMemo(() => pathname === "/pricing", [pathname]);
   const t = content[lang];
 
   return isPricing ? (
