@@ -611,7 +611,7 @@ function Header({ t, theme, setTheme, lang, setLang }) {
 
           <a
             className="btn btn-small"
-            href="https://t.me/"
+            href="https://t.me/b2bots_bot"
             target="_blank"
             rel="noreferrer"
           >
@@ -643,7 +643,7 @@ function LandingPage({ t, theme, setTheme, lang, setLang }) {
               <div className="hero-actions">
                 <a
                   className="btn"
-                  href="https://t.me/"
+                  href="https://t.me/b2bots_bot"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -939,7 +939,7 @@ function LandingPage({ t, theme, setTheme, lang, setLang }) {
             <div className="final-actions">
               <a
                 className="btn"
-                href="https://t.me/"
+                href="https://t.me/b2bots_bot"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -1006,7 +1006,7 @@ function PricingPage({ t, theme, setTheme, lang, setLang }) {
                 <li>{t.priceFeature1_5}</li>
               </ul>
 
-              <a className="card-btn" href="https://t.me/" target="_blank" rel="noreferrer">
+              <a className="card-btn" href="https://t.me/b2bots_bot" target="_blank" rel="noreferrer">
                 {t.discussThis}
               </a>
             </article>
@@ -1025,7 +1025,7 @@ function PricingPage({ t, theme, setTheme, lang, setLang }) {
                 <li>{t.priceFeature2_5}</li>
               </ul>
 
-              <a className="card-btn primary" href="https://t.me/" target="_blank" rel="noreferrer">
+              <a className="card-btn primary" href="https://t.me/b2bots_bot" target="_blank" rel="noreferrer">
                 {t.chooseThis}
               </a>
             </article>
@@ -1044,7 +1044,7 @@ function PricingPage({ t, theme, setTheme, lang, setLang }) {
                 <li>{t.priceFeature3_5}</li>
               </ul>
 
-              <a className="card-btn" href="https://t.me/" target="_blank" rel="noreferrer">
+              <a className="card-btn" href="https://t.me/b2bots_bot" target="_blank" rel="noreferrer">
                 {t.requestCalc}
               </a>
             </article>
@@ -1156,7 +1156,7 @@ function PricingPage({ t, theme, setTheme, lang, setLang }) {
             </div>
 
             <div className="pricing-final-actions">
-              <a className="btn" href="https://t.me/" target="_blank" rel="noreferrer">
+              <a className="btn" href="https://t.me/b2bots_bot" target="_blank" rel="noreferrer">
                 {t.pricingFinalBtn1}
               </a>
               <a className="btn btn-secondary" href="/#top">
