@@ -4,16 +4,17 @@ const content = {
   ru: {
     navSolutions: "Решения",
     navSystems: "Возможности",
-    navLaunch: "Запуск",
+    navLaunch: "Как это работает",
     navFaq: "FAQ",
     navPricing: "Тарифы",
     navDiscuss: "Обсудить проект",
 
-    heroTitle1: "Ручные процессы тормозят рост бизнеса?",
-    heroTitle2: "Telegram-бот автоматизирует то, что можно снять с команды",
+    heroTitle1: "Время уходит на рутину,",
+    heroTitle2: "а не на рост?",
+    heroTitle3: "Telegram-бот возьмёт процессы на себя",
     heroText:
-      "Собираю Telegram-ботов под задачи бизнеса: заявки, клиентский сервис, внутренние процессы, автоматизацию и решения с ИИ",
-    heroBtn1: "Обсудить проект",
+      "Заявки, клиентский сервис, внутренние процессы, автоматизация и AI-функции. Собираю Telegram-ботов под задачи бизнеса почти любой сложности",
+    heroBtn1: "Обсудить задачу",
 
     heroCardLabel: "Как это выглядит в работе",
     heroCardTitle:
@@ -115,37 +116,37 @@ const content = {
       "Если нужен более умный сценарий, можно добавить AI-ответы, обработку запросов, анализ и динамическую логику",
 
     launchEyebrow: "Как это работает",
-launchTitle: "От задачи до запуска за 7 дней",
-launchText:
-  "Разбираем, проектируем, собираем и запускаем Telegram-бота под ваш бизнес-процесс",
+    launchTitle: "От задачи до запуска за 7 дней",
+    launchText:
+      "Разбираем, проектируем, собираем и запускаем Telegram-бота под ваш бизнес-процесс",
 
-timeline1Title: "Разбираем задачу",
-timeline1Text:
-  "Обсуждаем бизнес-процесс, понимаем цель, определяем, что именно должен делать бот и какой результат нужен на выходе",
-timeline1Point1: "Бесплатная консультация",
-timeline1Point2: "План под вашу задачу",
-timeline1Point3: "Только конкретика",
+    timeline1Title: "Разбираем задачу",
+    timeline1Text:
+      "Обсуждаем бизнес-процесс, понимаем цель, определяем, что именно должен делать бот и какой результат нужен на выходе",
+    timeline1Point1: "Бесплатная консультация",
+    timeline1Point2: "План под вашу задачу",
+    timeline1Point3: "Только конкретика",
 
-timeline2Title: "Строим и подключаем",
-timeline2Text:
-  "Собираем Telegram-бота под ваши задачи, настраиваем сценарии, подключаем нужные сервисы и доводим механику до рабочего состояния",
-timeline2Point1: "Сборка под ключ",
-timeline2Point2: "Интеграции и логика",
-timeline2Point3: "Настройка рабочего процесса",
+    timeline2Title: "Строим и подключаем",
+    timeline2Text:
+      "Собираем Telegram-бота под ваши задачи, настраиваем сценарии, подключаем нужные сервисы и доводим механику до рабочего состояния",
+    timeline2Point1: "Сборка под ключ",
+    timeline2Point2: "Интеграции и логика",
+    timeline2Point3: "Настройка рабочего процесса",
 
-timeline3Title: "Запускаем",
-timeline3Text:
-  "Тестируем бота, проверяем сценарии, устраняем шероховатости и подготавливаем решение к реальной работе без сюрпризов",
-timeline3Point1: "Полное тестирование",
-timeline3Point2: "Проверка сценариев",
-timeline3Point3: "Готовность к запуску",
+    timeline3Title: "Запускаем",
+    timeline3Text:
+      "Тестируем бота, проверяем сценарии, устраняем шероховатости и подготавливаем решение к реальной работе без сюрпризов",
+    timeline3Point1: "Полное тестирование",
+    timeline3Point2: "Проверка сценариев",
+    timeline3Point3: "Готовность к запуску",
 
-timeline4Title: "Сопровождаем",
-timeline4Text:
-  "После запуска остаёмся рядом, отвечаем на вопросы, вносим правки и помогаем адаптировать бота под реальную работу бизнеса",
-timeline4Point1: "Поддержка после запуска",
-timeline4Point2: "Доработки по ходу",
-timeline4Point3: "Ответы на вопросы",
+    timeline4Title: "Сопровождаем",
+    timeline4Text:
+      "После запуска остаёмся рядом, отвечаем на вопросы, вносим правки и помогаем адаптировать бота под реальную работу бизнеса",
+    timeline4Point1: "Поддержка после запуска",
+    timeline4Point2: "Доработки по ходу",
+    timeline4Point3: "Ответы на вопросы",
 
     faqEyebrow: "FAQ",
     faqTitle: "Частые вопросы перед запуском",
@@ -280,18 +281,19 @@ timeline4Point3: "Ответы на вопросы",
   en: {
     navSolutions: "Solutions",
     navSystems: "Capabilities",
-    navLaunch: "Launch",
+    navLaunch: "How it works",
     navFaq: "FAQ",
     navPricing: "Pricing",
     navDiscuss: "Discuss project",
 
-    heroTitle1: "Telegram bots for business",
-    heroTitle2: "for tasks of almost any complexity",
+    heroTitle1: "Time goes into routine,",
+    heroTitle2: "not growth?",
+    heroTitle3: "A Telegram bot will take processes off your team",
     heroText:
-      "I build Telegram bots for business: from simple lead handling scenarios to more advanced solutions with integrations, process automation and AI-powered features",
-    heroBtn1: "Discuss project",
+      "Leads, customer service, internal processes, automation and AI features. I build Telegram bots for business tasks of almost any complexity",
+    heroBtn1: "Discuss task",
 
-    heroCardLabel: "How it works",
+    heroCardLabel: "How it works in practice",
     heroCardTitle:
       "The bot handles part of the process without constant team involvement",
     heroCardText:
@@ -390,37 +392,37 @@ timeline4Point3: "Ответы на вопросы",
       "If a smarter scenario is needed, AI can be added for answers, processing, analysis and dynamic logic",
 
     launchEyebrow: "How it works",
-launchTitle: "From task to launch in 7 days",
-launchText:
-  "We analyze, design, build and launch a Telegram bot for your business process",
+    launchTitle: "From task to launch in 7 days",
+    launchText:
+      "We analyze, design, build and launch a Telegram bot for your business process",
 
-timeline1Title: "Analyze the task",
-timeline1Text:
-  "We review your business process, define the goal, clarify what the bot should do and what result is needed",
-timeline1Point1: "Free consultation",
-timeline1Point2: "Clear plan",
-timeline1Point3: "Only practical points",
+    timeline1Title: "Analyze the task",
+    timeline1Text:
+      "We review your business process, define the goal, clarify what the bot should do and what result is needed",
+    timeline1Point1: "Free consultation",
+    timeline1Point2: "Clear plan",
+    timeline1Point3: "Only practical points",
 
-timeline2Title: "Build and connect",
-timeline2Text:
-  "We assemble the Telegram bot for your tasks, configure flows, connect required services and bring the mechanics to a working state",
-timeline2Point1: "Turnkey build",
-timeline2Point2: "Integrations and logic",
-timeline2Point3: "Workflow setup",
+    timeline2Title: "Build and connect",
+    timeline2Text:
+      "We assemble the Telegram bot for your tasks, configure flows, connect required services and bring the mechanics to a working state",
+    timeline2Point1: "Turnkey build",
+    timeline2Point2: "Integrations and logic",
+    timeline2Point3: "Workflow setup",
 
-timeline3Title: "Launch",
-timeline3Text:
-  "We test the bot, verify the flows, remove rough edges and prepare the solution for real work without surprises",
-timeline3Point1: "Full testing",
-timeline3Point2: "Flow validation",
-timeline3Point3: "Ready for launch",
+    timeline3Title: "Launch",
+    timeline3Text:
+      "We test the bot, verify the flows, remove rough edges and prepare the solution for real work without surprises",
+    timeline3Point1: "Full testing",
+    timeline3Point2: "Flow validation",
+    timeline3Point3: "Ready for launch",
 
-timeline4Title: "Support",
-timeline4Text:
-  "After launch we stay nearby, answer questions, make edits and help adapt the bot to real business work",
-timeline4Point1: "Post-launch support",
-timeline4Point2: "Edits during work",
-timeline4Point3: "Answers to questions",
+    timeline4Title: "Support",
+    timeline4Text:
+      "After launch we stay nearby, answer questions, make edits and help adapt the bot to real business work",
+    timeline4Point1: "Post-launch support",
+    timeline4Point2: "Edits during work",
+    timeline4Point3: "Answers to questions",
 
     faqEyebrow: "FAQ",
     faqTitle: "Common questions before launch",
@@ -609,7 +611,7 @@ function Header({ t, theme, setTheme, lang, setLang }) {
 
           <a
             className="btn btn-small"
-            href="https://t.me/tgbotsetup"
+            href="https://t.me/"
             target="_blank"
             rel="noreferrer"
           >
@@ -631,9 +633,9 @@ function LandingPage({ t, theme, setTheme, lang, setLang }) {
           <div className="container hero-grid">
             <div className="hero-content">
               <h1 className="hero-title">
-                {t.heroTitle1}
-                <br />
-                {t.heroTitle2}
+                <span className="hero-line hero-line-main">{t.heroTitle1}</span>
+                <span className="hero-line hero-line-main">{t.heroTitle2}</span>
+                <span className="hero-line hero-line-accent">{t.heroTitle3}</span>
               </h1>
 
               <p className="hero-text">{t.heroText}</p>
@@ -818,72 +820,72 @@ function LandingPage({ t, theme, setTheme, lang, setLang }) {
         </section>
 
         <section id="launch" className="section how-section">
-  <div className="container how-box">
-    <div className="section-head how-head">
-      <div className="eyebrow">{t.launchEyebrow}</div>
-      <h2>{t.launchTitle}</h2>
-      <p>{t.launchText}</p>
-    </div>
+          <div className="container how-box">
+            <div className="section-head how-head">
+              <div className="eyebrow">{t.launchEyebrow}</div>
+              <h2>{t.launchTitle}</h2>
+              <p>{t.launchText}</p>
+            </div>
 
-    <div className="how-grid">
-      <article className="how-card">
-        <div className="how-top">
-          <div className="how-num">1</div>
-        </div>
-        <h3>{t.timeline1Title}</h3>
-        <p>{t.timeline1Text}</p>
-        <div className="how-divider"></div>
-        <ul className="how-list">
-          <li>{t.timeline1Point1}</li>
-          <li>{t.timeline1Point2}</li>
-          <li>{t.timeline1Point3}</li>
-        </ul>
-      </article>
+            <div className="how-grid">
+              <article className="how-card">
+                <div className="how-top">
+                  <div className="how-num">1</div>
+                </div>
+                <h3>{t.timeline1Title}</h3>
+                <p>{t.timeline1Text}</p>
+                <div className="how-divider"></div>
+                <ul className="how-list">
+                  <li>{t.timeline1Point1}</li>
+                  <li>{t.timeline1Point2}</li>
+                  <li>{t.timeline1Point3}</li>
+                </ul>
+              </article>
 
-      <article className="how-card">
-        <div className="how-top">
-          <div className="how-num">2</div>
-        </div>
-        <h3>{t.timeline2Title}</h3>
-        <p>{t.timeline2Text}</p>
-        <div className="how-divider"></div>
-        <ul className="how-list">
-          <li>{t.timeline2Point1}</li>
-          <li>{t.timeline2Point2}</li>
-          <li>{t.timeline2Point3}</li>
-        </ul>
-      </article>
+              <article className="how-card">
+                <div className="how-top">
+                  <div className="how-num">2</div>
+                </div>
+                <h3>{t.timeline2Title}</h3>
+                <p>{t.timeline2Text}</p>
+                <div className="how-divider"></div>
+                <ul className="how-list">
+                  <li>{t.timeline2Point1}</li>
+                  <li>{t.timeline2Point2}</li>
+                  <li>{t.timeline2Point3}</li>
+                </ul>
+              </article>
 
-      <article className="how-card">
-        <div className="how-top">
-          <div className="how-num">3</div>
-        </div>
-        <h3>{t.timeline3Title}</h3>
-        <p>{t.timeline3Text}</p>
-        <div className="how-divider"></div>
-        <ul className="how-list">
-          <li>{t.timeline3Point1}</li>
-          <li>{t.timeline3Point2}</li>
-          <li>{t.timeline3Point3}</li>
-        </ul>
-      </article>
+              <article className="how-card">
+                <div className="how-top">
+                  <div className="how-num">3</div>
+                </div>
+                <h3>{t.timeline3Title}</h3>
+                <p>{t.timeline3Text}</p>
+                <div className="how-divider"></div>
+                <ul className="how-list">
+                  <li>{t.timeline3Point1}</li>
+                  <li>{t.timeline3Point2}</li>
+                  <li>{t.timeline3Point3}</li>
+                </ul>
+              </article>
 
-      <article className="how-card">
-        <div className="how-top">
-          <div className="how-num">4</div>
-        </div>
-        <h3>{t.timeline4Title}</h3>
-        <p>{t.timeline4Text}</p>
-        <div className="how-divider"></div>
-        <ul className="how-list">
-          <li>{t.timeline4Point1}</li>
-          <li>{t.timeline4Point2}</li>
-          <li>{t.timeline4Point3}</li>
-        </ul>
-      </article>
-    </div>
-  </div>
-</section>
+              <article className="how-card">
+                <div className="how-top">
+                  <div className="how-num">4</div>
+                </div>
+                <h3>{t.timeline4Title}</h3>
+                <p>{t.timeline4Text}</p>
+                <div className="how-divider"></div>
+                <ul className="how-list">
+                  <li>{t.timeline4Point1}</li>
+                  <li>{t.timeline4Point2}</li>
+                  <li>{t.timeline4Point3}</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
 
         <section id="faq" className="section section-dark">
           <div className="container">
