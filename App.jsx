@@ -6,168 +6,170 @@ const content = {
     navSystems: "Возможности",
     navLaunch: "Запуск",
     navFaq: "FAQ",
-    navDiscuss: "Обсудить задачу",
+    navDiscuss: "Обсудить проект",
 
-    heroTitle1: "Теряете клиентов в переписке",
-    heroTitle2: "Бот возьмёт входящие на себя",
+    heroTitle1: "Telegram-боты для бизнеса",
+    heroTitle2: "под задачи почти любой сложности",
     heroText:
-      "Разрабатываю ботов для бизнеса, которые отвечают на частые вопросы, собирают контакты, уточняют запрос и передают в работу уже готовые обращения",
-    heroBtn1: "Получить схему под бизнес",
+      "Разрабатываю Telegram-ботов для бизнеса: от простых сценариев обработки заявок до более сложных решений с интеграциями, автоматизацией процессов и AI-функциями",
+    heroBtn1: "Обсудить проект",
 
     heroCardLabel: "Как это выглядит в работе",
-    heroCardTitle: "Бот обрабатывает первое обращение вместо менеджера",
+    heroCardTitle: "Бот закрывает часть процессов без постоянного участия команды",
     heroCardText:
-      "Пока команда занята, бот отвечает клиенту, уточняет запрос и передаёт менеджеру уже понятную заявку",
+      "Telegram-бот может принимать обращения, собирать данные, вести клиента по сценарию, автоматизировать внутренние действия и при необходимости усиливаться AI-механикой",
 
     chatBot: "Бот",
     chatClient: "Клиент",
-    chatManager: "Менеджер",
+    chatManager: "Команда",
 
-    msg1: "Здравствуйте! Подскажите стоимость и как записаться",
-    msg2: "Добрый день 👋 Помогу с этим. Какая услуга вас интересует",
-    msg3: "Нужна консультация и ближайшее свободное время",
-    msg4: "Отлично. Подскажите ваше имя и номер для подтверждения",
-    msg5: "Анна, +7 900 123 45 67",
-    msg6: "Готово. Передаю менеджеру оформленное обращение",
-    msg7: "Получил заявку: Анна, консультация, просит ближайшее время",
+    msg1: "Здравствуйте, хочу понять, какой бот подойдёт для моего бизнеса",
+    msg2: "Добрый день 👋 Помогу с этим. Какая задача стоит сейчас",
+    msg3: "Нужно принимать заявки, отвечать на частые вопросы и распределять обращения",
+    msg4: "Понял. Можно собрать Telegram-бота под эти процессы и при необходимости добавить AI",
+    msg5: "А можно ещё связать его с CRM и уведомлениями",
+    msg6: "Да, это можно заложить в сценарий и структуру бота",
+    msg7: "Запрос понятен: Telegram-бот под заявки, FAQ, CRM и автоматизацию",
 
     solutionsEyebrow: "Основные решения",
     solutionsTitle:
-      "Бот собирается под конкретный процесс, а не просто ради автоматизации",
+      "Бот собирается под конкретную бизнес-задачу, а не по шаблону",
     solutionsText:
-      "Логика зависит от ниши, канала общения, типа заявки и того, какой путь клиент должен пройти до записи, консультации или обращения",
+      "Логика, структура и функции зависят от того, что именно нужно бизнесу: обработка заявок, автоматизация, интеграции, сервисные сценарии или AI-усиление",
 
-    card1Title: "Бот для записи",
+    card1Title: "Боты для заявок",
     card1Text:
-      "Подходит для бизнеса, где клиенту нужно выбрать услугу, дату, специалиста или удобный слот",
+      "Приём обращений, сбор данных, квалификация клиента и передача заявки в работу",
 
-    card2Title: "Бот для входящих",
+    card2Title: "Боты для автоматизации",
     card2Text:
-      "Принимает первичный запрос, отвечает на типовые вопросы и не даёт терять обращения в нерабочее время",
+      "Сценарии, которые снимают с команды рутинные действия и ускоряют процессы",
 
-    card3Title: "Бот для FAQ",
+    card3Title: "Боты с интеграциями",
     card3Text:
-      "Закрывает повторяющиеся вопросы по услугам, стоимости, условиям, локации и дальнейшим шагам",
+      "Подключение CRM, таблиц, уведомлений, API и других внешних сервисов",
 
-    card4Title: "Бот для заявок",
+    card4Title: "Сервисные боты",
     card4Text:
-      "Собирает контакт, бриф и ключевые детали заранее, чтобы менеджер получал уже понятное обращение",
+      "FAQ, сопровождение, инструкции, навигация по услугам и поддержка клиента внутри Telegram",
 
-    card5Title: "Бот для брони",
+    card5Title: "Боты под внутренние процессы",
     card5Text:
-      "Подходит для студий, площадок, отелей, услуг и других форматов, где важна быстрая фиксация интереса",
+      "Решения для сотрудников, заявок, согласований, контроля этапов и внутренних сценариев",
 
-    card6Title: "Бот под процесс",
+    card6Title: "Боты с AI-усилением",
     card6Text:
-      "Можно собрать сценарий под внутреннюю механику бизнеса, CRM, таблицы, заявки и внешние сервисы",
+      "Если нужно, в Telegram-бот можно встроить AI-функции для ответов, анализа, маршрутизации и более гибкой логики",
 
-    systemsEyebrow: "Что бот делает внутри процесса",
-    systemsTitle: "Не просто отвечает, а двигает клиента по понятной логике",
+    systemsEyebrow: "Что может Telegram-бот",
+    systemsTitle: "Не просто отвечает, а становится рабочим инструментом внутри бизнеса",
     systemsText:
-      "Важен не сам факт наличия бота, а то, как именно он встроен в обработку обращений и на каком этапе помогает команде",
+      "Бот может быть точкой входа, частью воронки, сервисным интерфейсом, автоматизатором процессов или прослойкой между клиентом, командой и системами",
 
-    step1Title: "Встречает клиента",
+    step1Title: "Принимает обращения",
     step1Text:
-      "Бот отвечает сразу после входящего сообщения и не оставляет человека без реакции в первые минуты",
+      "Бот может выступать первой точкой контакта и собирать обращения в удобной структуре",
 
-    step2Title: "Уточняет запрос",
+    step2Title: "Ведёт по сценарию",
     step2Text:
-      "Помогает понять, что именно нужно клиенту, и ведёт его по заранее продуманной логике",
+      "Направляет клиента, сотрудника или пользователя по продуманной логике без хаоса и лишних шагов",
 
-    step3Title: "Собирает данные",
+    step3Title: "Собирает и передаёт данные",
     step3Text:
-      "Имя, контакт, формат услуги, удобное время, детали заявки и другая информация, нужная бизнесу",
+      "Формирует заявку, бриф, запрос или внутреннюю задачу и отправляет её дальше",
 
-    step4Title: "Отвечает на FAQ",
+    step4Title: "Автоматизирует рутину",
     step4Text:
-      "Снимает часть однотипных вопросов и сокращает нагрузку на администратора или менеджера",
+      "Убирает повторяющиеся действия, сокращает ручную работу и разгружает команду",
 
-    step5Title: "Доводит до действия",
+    step5Title: "Интегрируется с системами",
     step5Text:
-      "Запись, бронь, заявка, запрос консультации или другая целевая точка в воронке",
+      "Может работать вместе с CRM, таблицами, уведомлениями, API и другой инфраструктурой",
 
-    step6Title: "Передаёт в работу",
+    step6Title: "Усиливается AI при необходимости",
     step6Text:
-      "Менеджер получает уже структурированное обращение и быстрее включается в следующий этап коммуникации",
+      "Если задача требует гибкости, в бота можно встроить AI-функции как дополнительное усиление",
 
-    useEyebrow: "Где это особенно полезно",
-    useTitle: "Лучше всего бот работает там, где люди сначала пишут, а не звонят",
+    useEyebrow: "Под какие задачи это подходит",
+    useTitle: "Telegram-бот можно собрать под очень разные процессы бизнеса",
     useText:
-      "Особенно это актуально для бизнеса с частыми вопросами, заявками, записями, бронью и большим количеством однотипных входящих",
+      "От внешней коммуникации с клиентами до внутренних автоматизаций, сервисных сценариев и решений с расширенной логикой",
 
-    use1Title: "Услуги и запись",
+    use1Title: "Клиентские сценарии",
     use1Text:
-      "Салоны, клиники, студии, частные практики, сервисы и другие ниши, где нужно быстро принять обращение и провести человека до записи",
+      "Заявки, консультации, ответы на вопросы, сопровождение клиента, брони, записи и маршрутизация обращений",
 
-    use2Title: "Локальный офлайн-бизнес",
+    use2Title: "Операционные процессы",
     use2Text:
-      "Там, где сообщения приходят вечером, ночью или в часы пик, когда сотрудники заняты и не успевают быстро ответить",
+      "Автоматизация повторяющихся действий, уведомлений, распределения запросов и внутренних этапов работы",
 
-    use3Title: "B2B и сервисные компании",
+    use3Title: "Интеграционные решения",
     use3Text:
-      "Когда важно не просто получить сообщение, а собрать первичный бриф и передать менеджеру более полный запрос",
+      "Связка Telegram-бота с внешними сервисами, CRM, таблицами, API и внутренними системами",
 
-    use4Title: "Проекты с мессенджерами как точкой входа",
+    use4Title: "Боты с AI-функциями",
     use4Text:
-      "Если трафик уже идёт в Telegram или WhatsApp, бот помогает сделать этот канал более управляемым",
+      "Если нужен более умный сценарий, можно добавить AI-ответы, обработку запросов, анализ и динамическую логику",
 
     launchEyebrow: "Этапы запуска",
     launchTitle:
-      "Сначала разбираем процесс, потом собираем сценарий и только после этого запускаем",
+      "Сначала разбираем задачу, затем проектируем механику и только после этого собираем решение",
     launchText:
-      "Такой подход позволяет делать не просто красивый интерфейс, а рабочий инструмент, который встроен в реальную коммуникацию бизнеса",
+      "Такой подход позволяет делать не просто красивого бота, а рабочий инструмент, который решает конкретную задачу бизнеса",
 
-    timeline1Title: "Разбор бизнес-задачи",
+    timeline1Title: "Разбор задачи",
     timeline1Text:
-      "Смотрим, как сейчас обрабатываются входящие, где теряются люди и какой сценарий даст наибольшую пользу",
+      "Смотрим, какая цель стоит у бизнеса, что нужно автоматизировать и какой формат Telegram-бота подойдёт лучше всего",
 
-    timeline2Title: "Проектирование сценария",
+    timeline2Title: "Проектирование логики",
     timeline2Text:
-      "Продумываем структуру диалога, ветки, вопросы, точки принятия решения и логику передачи обращения",
+      "Продумываем сценарии, структуру, ветки, данные, роли, интеграции и точки взаимодействия",
 
     timeline3Title: "Сборка и тестирование",
     timeline3Text:
-      "Подключаем каналы, собираем механику, проверяем путь клиента и дорабатываем детали до рабочего состояния",
+      "Собираем бота, подключаем нужные элементы, тестируем механику и дорабатываем детали",
 
-    timeline4Title: "Запуск в работу",
+    timeline4Title: "Запуск и развитие",
     timeline4Text:
-      "Передаём готовое решение и при необходимости сопровождаем после старта, чтобы всё работало стабильно",
+      "Передаём готовое решение и при необходимости расширяем его новыми функциями дальше",
 
     faqEyebrow: "FAQ",
     faqTitle: "Частые вопросы перед запуском",
 
-    faq1Title: "Сколько занимает запуск",
+    faq1Title: "Какие Telegram-боты вы разрабатываете",
     faq1Text:
-      "Зависит от сложности логики, количества веток и подключений, но простые решения запускаются заметно быстрее",
+      "От простых ботов под заявки и FAQ до более сложных решений с автоматизацией, интеграциями и AI-функциями",
 
-    faq2Title: "Можно ли подключить CRM",
+    faq2Title: "Можно ли сделать бота под нестандартную задачу",
     faq2Text:
-      "Да, сценарий можно связать с CRM, таблицами, уведомлениями и внутренними бизнес-процессами",
+      "Да, если задачу можно разложить на сценарий, данные и логику, то под неё обычно можно собрать решение",
 
-    faq3Title: "Можно ли использовать только Telegram",
+    faq3Title: "Можно ли подключить CRM и другие сервисы",
     faq3Text:
-      "Да, можно собрать решение под один канал или сразу под несколько точек входа",
+      "Да, бот может быть связан с CRM, таблицами, уведомлениями, API и другими системами",
 
-    faq4Title: "Подходит ли это малому бизнесу",
+    faq4Title: "Обязательно ли нужен AI",
     faq4Text:
-      "Да, если уже есть входящие обращения, запись, бронь или частые вопросы в переписке",
+      "Нет, AI нужен не всегда. Во многих задачах хватает хорошо спроектированной логики. AI добавляется тогда, когда он реально усиливает результат",
 
-    faq5Title: "Что получает менеджер на выходе",
+    faq5Title: "Подходит ли это малому бизнесу",
     faq5Text:
-      "Не просто переписку, а уже собранный запрос с базовой структурой, чтобы быстрее продолжить коммуникацию",
+      "Да, если есть повторяющиеся процессы, входящие обращения, сервисные задачи или потребность в автоматизации",
 
-    faq6Title: "Нужен ли для этого сайт",
+    faq6Title: "Можно ли начать с простой версии",
     faq6Text:
-      "Нет, бот может быть самостоятельной точкой входа и принимать обращения напрямую из мессенджера",
+      "Да, можно запустить базовую версию, а потом постепенно расширять её под новые задачи",
 
     finalEyebrow: "Финальный шаг",
-    finalTitle: "Покажу, какой сценарий бота можно собрать именно под ваш бизнес",
+    finalTitle:
+      "Покажу, какого Telegram-бота можно собрать именно под вашу задачу",
     finalText:
-      "Разберу ваш процесс, скажу где бот даст реальную пользу и предложу понятную схему под ваш формат заявок, общения и обработки входящих",
-    finalBtn1: "Обсудить задачу",
-    finalBtn2: "Написать в Telegram",
+      "Разберу ваш процесс, предложу логику решения и покажу, как можно реализовать Telegram-бота под ваш бизнес с нужным уровнем сложности",
+    finalBtn1: "Обсудить проект",
+    finalBtn2: "Посмотреть вариант решения",
 
-    footerSubtitle: "Боты для бизнеса под заявки, запись и обработку входящих",
+    footerSubtitle:
+      "Telegram-боты для бизнеса, автоматизации процессов и решений с AI-усилением",
     footerCopyright: "© 2026 b2bots. Все права защищены",
   },
 
@@ -178,164 +180,168 @@ const content = {
     navFaq: "FAQ",
     navDiscuss: "Discuss project",
 
-    heroTitle1: "Losing clients in chats",
-    heroTitle2: "The bot will handle inbound messages for you",
+    heroTitle1: "Telegram bots for business",
+    heroTitle2: "for tasks of almost any complexity",
     heroText:
-      "I build bots for businesses that answer common questions, collect contacts, clarify requests and pass ready-to-handle leads to your team",
-    heroBtn1: "Get a bot outline",
+      "I build Telegram bots for business: from simple lead handling scenarios to more advanced solutions with integrations, process automation and AI-powered features",
+    heroBtn1: "Discuss project",
 
     heroCardLabel: "How it works",
-    heroCardTitle: "The bot handles the first contact instead of the manager",
+    heroCardTitle: "The bot handles part of the process without constant team involvement",
     heroCardText:
-      "While your team is busy, the bot replies to the client, clarifies the request and sends the manager a structured lead",
+      "A Telegram bot can receive requests, collect data, guide users through flows, automate internal actions and, when needed, be enhanced with AI",
 
     chatBot: "Bot",
     chatClient: "Client",
-    chatManager: "Manager",
+    chatManager: "Team",
 
-    msg1: "Hello, can you tell me the price and how to book",
-    msg2: "Hi 👋 Sure. What service are you interested in",
-    msg3: "I need a consultation and the nearest available time",
-    msg4: "Great. Please send your name and phone number",
-    msg5: "Anna, +7 900 123 45 67",
-    msg6: "Done. Sending the completed request to the manager",
-    msg7: "Lead received: Anna, consultation, wants the nearest available slot",
+    msg1: "Hello, I want to understand what kind of bot would fit my business",
+    msg2: "Hi 👋 Sure. What task are you trying to solve right now",
+    msg3: "I need to handle leads, answer common questions and distribute requests",
+    msg4: "Got it. We can build a Telegram bot for that and add AI if needed",
+    msg5: "Can it also be connected to CRM and notifications",
+    msg6: "Yes, that can be included in the bot logic and structure",
+    msg7: "Request is clear: Telegram bot for leads, FAQ, CRM and automation",
 
     solutionsEyebrow: "Core solutions",
-    solutionsTitle: "The bot is built around your process, not just automation",
+    solutionsTitle:
+      "The bot is built around a real business task, not from a template",
     solutionsText:
-      "The logic depends on your niche, communication channel, lead type and the path the client needs to take before booking or requesting a consultation",
+      "The logic, structure and features depend on what exactly the business needs: lead handling, automation, integrations, service flows or AI enhancement",
 
-    card1Title: "Booking bot",
+    card1Title: "Lead handling bots",
     card1Text:
-      "Great for businesses where clients choose a service, date, specialist or time slot",
+      "Receive requests, collect data, qualify users and pass structured leads to the team",
 
-    card2Title: "Inbound bot",
+    card2Title: "Automation bots",
     card2Text:
-      "Handles first-touch requests, answers common questions and prevents lost leads outside working hours",
+      "Scenarios that remove routine actions from the team and speed up operations",
 
-    card3Title: "FAQ bot",
+    card3Title: "Integrated bots",
     card3Text:
-      "Handles repeated questions about services, pricing, terms, location and next steps",
+      "Connect CRM, spreadsheets, notifications, APIs and external services",
 
-    card4Title: "Lead capture bot",
+    card4Title: "Service bots",
     card4Text:
-      "Collects contact details, brief and key request data before a manager joins the conversation",
+      "FAQ, support flows, instructions, service navigation and customer interaction inside Telegram",
 
-    card5Title: "Reservation bot",
+    card5Title: "Internal workflow bots",
     card5Text:
-      "Works well for studios, venues, hotels, services and other formats where fast intent capture matters",
+      "Solutions for staff, approvals, internal requests, stage control and operational scenarios",
 
-    card6Title: "Custom process bot",
+    card6Title: "AI-enhanced bots",
     card6Text:
-      "Can be built around your internal flow, CRM, tables, forms and external services",
+      "If needed, AI can be added for answers, routing, analysis and more flexible logic",
 
-    systemsEyebrow: "How the bot works inside the process",
-    systemsTitle: "It does not just reply, it moves the client forward",
+    systemsEyebrow: "What a Telegram bot can do",
+    systemsTitle: "It does not just reply, it becomes a working business tool",
     systemsText:
-      "What matters is not the fact that a bot exists, but how it is integrated into lead handling and where it helps your team most",
+      "A bot can be an entry point, part of a funnel, a service interface, an automation layer or a bridge between the client, the team and internal systems",
 
-    step1Title: "Greets instantly",
+    step1Title: "Receives requests",
     step1Text:
-      "The bot replies right after the inbound message and does not leave the client waiting",
+      "The bot can become the first point of contact and collect incoming requests in a structured way",
 
-    step2Title: "Clarifies the request",
+    step2Title: "Guides through flows",
     step2Text:
-      "It helps understand what exactly the client needs and guides them through a clear flow",
+      "It moves the client, employee or user through a clear scenario without chaos",
 
-    step3Title: "Collects data",
+    step3Title: "Collects and transfers data",
     step3Text:
-      "Name, contact, service type, preferred time and other information your business needs",
+      "It forms a lead, brief, request or internal task and sends it further",
 
-    step4Title: "Handles FAQ",
+    step4Title: "Automates routine",
     step4Text:
-      "Reduces repetitive questions and lowers the load on your admin or manager",
+      "Removes repetitive actions, reduces manual work and unloads the team",
 
-    step5Title: "Drives to action",
+    step5Title: "Integrates with systems",
     step5Text:
-      "Booking, reservation, lead submission, consultation request or another target action",
+      "Works together with CRM, spreadsheets, notifications, APIs and other tools",
 
-    step6Title: "Hands off to the team",
+    step6Title: "Can be enhanced with AI",
     step6Text:
-      "Your manager gets a structured request and can continue the conversation faster",
+      "If the task needs flexibility, AI functions can be added as an extra layer",
 
-    useEyebrow: "Best use cases",
-    useTitle: "Works best when people message first instead of calling",
+    useEyebrow: "What this fits",
+    useTitle: "A Telegram bot can be built for very different business processes",
     useText:
-      "Especially useful for businesses with repeated questions, bookings, reservations and a high volume of similar inbound messages",
+      "From external communication with clients to internal automation, service scenarios and extended logic solutions",
 
-    use1Title: "Services and appointments",
+    use1Title: "Client-facing scenarios",
     use1Text:
-      "Salons, clinics, studios, private practices, service companies and other niches where fast response matters",
+      "Leads, consultations, FAQs, support, bookings, appointments and request routing",
 
-    use2Title: "Local offline businesses",
+    use2Title: "Operational processes",
     use2Text:
-      "Especially when messages come in during evenings, nights or rush hours while staff is busy",
+      "Automation of repetitive actions, notifications, distribution of requests and internal workflows",
 
-    use3Title: "B2B and service companies",
+    use3Title: "Integration solutions",
     use3Text:
-      "When it is important not just to receive a message, but to collect a short brief before a manager joins",
+      "Connecting Telegram bots with external services, CRM, spreadsheets, APIs and internal systems",
 
-    use4Title: "Messenger-first projects",
+    use4Title: "Bots with AI features",
     use4Text:
-      "If your traffic already goes into Telegram or WhatsApp, a bot makes the channel much more manageable",
+      "If a smarter scenario is needed, AI can be added for answers, processing, analysis and dynamic logic",
 
     launchEyebrow: "Launch stages",
-    launchTitle: "First we analyze the process, then build the logic and only then launch",
+    launchTitle:
+      "First we analyze the task, then design the logic and only then build the solution",
     launchText:
-      "This approach helps create not just a nice interface, but a working tool integrated into real business communication",
+      "This approach helps create not just a nice bot, but a working tool that solves a real business task",
 
-    timeline1Title: "Business analysis",
+    timeline1Title: "Task analysis",
     timeline1Text:
-      "We review how inbound requests are handled now, where leads are lost and what scenario will bring the most value",
+      "We define the business goal, what needs automation and what format of Telegram bot fits best",
 
-    timeline2Title: "Scenario design",
+    timeline2Title: "Logic design",
     timeline2Text:
-      "We design the dialogue structure, branches, questions, decision points and handoff logic",
+      "We design flows, structure, branches, data, roles, integrations and interaction points",
 
     timeline3Title: "Build and testing",
     timeline3Text:
-      "We connect channels, assemble the flow, test the customer path and refine the details",
+      "We build the bot, connect required parts, test the mechanics and refine the details",
 
-    timeline4Title: "Go live",
+    timeline4Title: "Launch and growth",
     timeline4Text:
-      "We hand over the ready solution and can support it after launch if needed",
+      "We hand over the solution and can extend it later with new functionality",
 
     faqEyebrow: "FAQ",
     faqTitle: "Common questions before launch",
 
-    faq1Title: "How long does launch take",
+    faq1Title: "What kinds of Telegram bots do you build",
     faq1Text:
-      "It depends on the logic complexity, number of branches and integrations, but simple solutions launch faster",
+      "From simple lead and FAQ bots to more advanced solutions with automation, integrations and AI functions",
 
-    faq2Title: "Can it be connected to a CRM",
+    faq2Title: "Can you build a bot for a custom task",
     faq2Text:
-      "Yes, the scenario can be connected to a CRM, spreadsheets, notifications and internal business processes",
+      "Yes. If the task can be broken down into logic, data and flows, it can usually be implemented",
 
-    faq3Title: "Can we use only Telegram",
+    faq3Title: "Can it be connected to CRM and other systems",
     faq3Text:
-      "Yes, the solution can be built for one channel or several entry points at once",
+      "Yes, the bot can work with CRM, spreadsheets, notifications, APIs and other tools",
 
-    faq4Title: "Does it fit small businesses",
+    faq4Title: "Is AI required",
     faq4Text:
-      "Yes, if you already have inbound requests, bookings, reservations or repeated questions in chats",
+      "No. AI is not always necessary. In many cases well-designed logic is enough. AI is added when it really improves the result",
 
-    faq5Title: "What does the manager receive",
+    faq5Title: "Does it fit small businesses",
     faq5Text:
-      "Not just a chat, but a structured request that makes the next step much faster",
+      "Yes, if there are repetitive processes, incoming requests, service tasks or a need for automation",
 
-    faq6Title: "Do we need a website",
+    faq6Title: "Can we start with a simple version",
     faq6Text:
-      "No, the bot can work as a standalone entry point and receive requests directly in a messenger",
+      "Yes, a basic version can be launched first and expanded later",
 
     finalEyebrow: "Final step",
-    finalTitle: "I will show what bot scenario can be built specifically for your business",
+    finalTitle:
+      "I will show what kind of Telegram bot can be built for your specific task",
     finalText:
-      "I will review your process, show where a bot brings real value and suggest a clear flow for your inbound communication",
+      "I will review your process, suggest a solution logic and show how a Telegram bot can be implemented for your business with the right level of complexity",
     finalBtn1: "Discuss project",
-    finalBtn2: "Message on Telegram",
+    finalBtn2: "See solution option",
 
-    footerSubtitle: "Bots for business lead capture, booking and inbound handling",
+    footerSubtitle:
+      "Telegram bots for business, process automation and AI-enhanced solutions",
     footerCopyright: "© 2026 b2bots. All rights reserved",
   },
 };
