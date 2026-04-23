@@ -795,49 +795,73 @@ function LandingPage({ t, theme, setTheme, lang, setLang }) {
           </div>
         </section>
 
-        <section id="launch" className="section">
-          <div className="container">
-            <div className="section-head">
-              <div className="eyebrow">{t.launchEyebrow}</div>
-              <h2>{t.launchTitle}</h2>
-              <p>{t.launchText}</p>
-            </div>
+        <section id="launch" className="section how-section">
+  <div className="container how-box">
+    <div className="section-head how-head">
+      <div className="eyebrow">{t.launchEyebrow}</div>
+      <h2>{t.launchTitle}</h2>
+      <p>{t.launchText}</p>
+    </div>
 
-            <div className="timeline">
-              <article className="timeline-item">
-                <div className="timeline-num">01</div>
-                <div>
-                  <h3>{t.timeline1Title}</h3>
-                  <p>{t.timeline1Text}</p>
-                </div>
-              </article>
+    <div className="how-grid">
+      <article className="how-card">
+        <div className="how-top">
+          <div className="how-num">1</div>
+        </div>
+        <h3>{t.timeline1Title}</h3>
+        <p>{t.timeline1Text}</p>
+        <div className="how-divider"></div>
+        <ul className="how-list">
+          <li>{t.timeline1Point1}</li>
+          <li>{t.timeline1Point2}</li>
+          <li>{t.timeline1Point3}</li>
+        </ul>
+      </article>
 
-              <article className="timeline-item">
-                <div className="timeline-num">02</div>
-                <div>
-                  <h3>{t.timeline2Title}</h3>
-                  <p>{t.timeline2Text}</p>
-                </div>
-              </article>
+      <article className="how-card">
+        <div className="how-top">
+          <div className="how-num">2</div>
+        </div>
+        <h3>{t.timeline2Title}</h3>
+        <p>{t.timeline2Text}</p>
+        <div className="how-divider"></div>
+        <ul className="how-list">
+          <li>{t.timeline2Point1}</li>
+          <li>{t.timeline2Point2}</li>
+          <li>{t.timeline2Point3}</li>
+        </ul>
+      </article>
 
-              <article className="timeline-item">
-                <div className="timeline-num">03</div>
-                <div>
-                  <h3>{t.timeline3Title}</h3>
-                  <p>{t.timeline3Text}</p>
-                </div>
-              </article>
+      <article className="how-card">
+        <div className="how-top">
+          <div className="how-num">3</div>
+        </div>
+        <h3>{t.timeline3Title}</h3>
+        <p>{t.timeline3Text}</p>
+        <div className="how-divider"></div>
+        <ul className="how-list">
+          <li>{t.timeline3Point1}</li>
+          <li>{t.timeline3Point2}</li>
+          <li>{t.timeline3Point3}</li>
+        </ul>
+      </article>
 
-              <article className="timeline-item">
-                <div className="timeline-num">04</div>
-                <div>
-                  <h3>{t.timeline4Title}</h3>
-                  <p>{t.timeline4Text}</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
+      <article className="how-card">
+        <div className="how-top">
+          <div className="how-num">4</div>
+        </div>
+        <h3>{t.timeline4Title}</h3>
+        <p>{t.timeline4Text}</p>
+        <div className="how-divider"></div>
+        <ul className="how-list">
+          <li>{t.timeline4Point1}</li>
+          <li>{t.timeline4Point2}</li>
+          <li>{t.timeline4Point3}</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
 
         <section id="faq" className="section section-dark">
           <div className="container">
