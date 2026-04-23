@@ -9,10 +9,10 @@ const content = {
     navPricing: "Тарифы",
     navDiscuss: "Обсудить проект",
 
-    heroTitle1: "Telegram-боты для бизнеса",
-    heroTitle2: "под задачи почти любой сложности",
+    heroTitle1: "Ручные процессы тормозят рост бизнеса?",
+    heroTitle2: "Telegram-бот автоматизирует то, что можно снять с команды",
     heroText:
-      "Разрабатываю Telegram-ботов для бизнеса: от простых сценариев обработки заявок до более сложных решений с интеграциями, автоматизацией процессов и AI-функциями",
+      "Собираю Telegram-ботов под задачи бизнеса: заявки, клиентский сервис, внутренние процессы, автоматизацию и решения с ИИ",
     heroBtn1: "Обсудить проект",
 
     heroCardLabel: "Как это выглядит в работе",
@@ -609,7 +609,7 @@ function Header({ t, theme, setTheme, lang, setLang }) {
 
           <a
             className="btn btn-small"
-            href="https://t.me/"
+            href="https://t.me/tgbotsetup"
             target="_blank"
             rel="noreferrer"
           >
