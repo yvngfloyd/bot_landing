@@ -114,27 +114,38 @@ const content = {
     use4Text:
       "Если нужен более умный сценарий, можно добавить AI-ответы, обработку запросов, анализ и динамическую логику",
 
-    launchEyebrow: "Этапы запуска",
-    launchTitle:
-      "Сначала разбираем задачу, затем проектируем механику и только после этого собираем решение",
-    launchText:
-      "Такой подход позволяет делать не просто красивого бота, а рабочий инструмент, который решает конкретную задачу бизнеса",
+    launchEyebrow: "Как это работает",
+launchTitle: "От задачи до запуска за 7 дней",
+launchText:
+  "Разбираем, проектируем, собираем и запускаем Telegram-бота под ваш бизнес-процесс",
 
-    timeline1Title: "Разбор задачи",
-    timeline1Text:
-      "Смотрим, какая цель стоит у бизнеса, что нужно автоматизировать и какой формат Telegram-бота подойдёт лучше всего",
+timeline1Title: "Разбираем задачу",
+timeline1Text:
+  "Обсуждаем бизнес-процесс, понимаем цель, определяем, что именно должен делать бот и какой результат нужен на выходе",
+timeline1Point1: "Бесплатная консультация",
+timeline1Point2: "План под вашу задачу",
+timeline1Point3: "Только конкретика",
 
-    timeline2Title: "Проектирование логики",
-    timeline2Text:
-      "Продумываем сценарии, структуру, ветки, данные, роли, интеграции и точки взаимодействия",
+timeline2Title: "Строим и подключаем",
+timeline2Text:
+  "Собираем Telegram-бота под ваши задачи, настраиваем сценарии, подключаем нужные сервисы и доводим механику до рабочего состояния",
+timeline2Point1: "Сборка под ключ",
+timeline2Point2: "Интеграции и логика",
+timeline2Point3: "Настройка рабочего процесса",
 
-    timeline3Title: "Сборка и тестирование",
-    timeline3Text:
-      "Собираем бота, подключаем нужные элементы, тестируем механику и дорабатываем детали",
+timeline3Title: "Запускаем",
+timeline3Text:
+  "Тестируем бота, проверяем сценарии, устраняем шероховатости и подготавливаем решение к реальной работе без сюрпризов",
+timeline3Point1: "Полное тестирование",
+timeline3Point2: "Проверка сценариев",
+timeline3Point3: "Готовность к запуску",
 
-    timeline4Title: "Запуск и развитие",
-    timeline4Text:
-      "Передаём готовое решение и при необходимости расширяем его новыми функциями дальше",
+timeline4Title: "Сопровождаем",
+timeline4Text:
+  "После запуска остаёмся рядом, отвечаем на вопросы, вносим правки и помогаем адаптировать бота под реальную работу бизнеса",
+timeline4Point1: "Поддержка после запуска",
+timeline4Point2: "Доработки по ходу",
+timeline4Point3: "Ответы на вопросы",
 
     faqEyebrow: "FAQ",
     faqTitle: "Частые вопросы перед запуском",
@@ -378,27 +389,38 @@ const content = {
     use4Text:
       "If a smarter scenario is needed, AI can be added for answers, processing, analysis and dynamic logic",
 
-    launchEyebrow: "Launch stages",
-    launchTitle:
-      "First we analyze the task, then design the logic and only then build the solution",
-    launchText:
-      "This approach helps create not just a nice bot, but a working tool that solves a real business task",
+    launchEyebrow: "How it works",
+launchTitle: "From task to launch in 7 days",
+launchText:
+  "We analyze, design, build and launch a Telegram bot for your business process",
 
-    timeline1Title: "Task analysis",
-    timeline1Text:
-      "We define the business goal, what needs automation and what format of Telegram bot fits best",
+timeline1Title: "Analyze the task",
+timeline1Text:
+  "We review your business process, define the goal, clarify what the bot should do and what result is needed",
+timeline1Point1: "Free consultation",
+timeline1Point2: "Clear plan",
+timeline1Point3: "Only practical points",
 
-    timeline2Title: "Logic design",
-    timeline2Text:
-      "We design flows, structure, branches, data, roles, integrations and interaction points",
+timeline2Title: "Build and connect",
+timeline2Text:
+  "We assemble the Telegram bot for your tasks, configure flows, connect required services and bring the mechanics to a working state",
+timeline2Point1: "Turnkey build",
+timeline2Point2: "Integrations and logic",
+timeline2Point3: "Workflow setup",
 
-    timeline3Title: "Build and testing",
-    timeline3Text:
-      "We build the bot, connect required parts, test the mechanics and refine the details",
+timeline3Title: "Launch",
+timeline3Text:
+  "We test the bot, verify the flows, remove rough edges and prepare the solution for real work without surprises",
+timeline3Point1: "Full testing",
+timeline3Point2: "Flow validation",
+timeline3Point3: "Ready for launch",
 
-    timeline4Title: "Launch and growth",
-    timeline4Text:
-      "We hand over the solution and can extend it later with new functionality",
+timeline4Title: "Support",
+timeline4Text:
+  "After launch we stay nearby, answer questions, make edits and help adapt the bot to real business work",
+timeline4Point1: "Post-launch support",
+timeline4Point2: "Edits during work",
+timeline4Point3: "Answers to questions",
 
     faqEyebrow: "FAQ",
     faqTitle: "Common questions before launch",
