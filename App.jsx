@@ -185,7 +185,7 @@ const content = {
 
     footerSubtitle:
       "Telegram-боты для бизнеса, автоматизации процессов и решений с AI-усилением",
-    footerCopyright: "© 2026 b2bots. Все права защищены",
+    footerCopyright: "© 2026 B2Bots. Все права защищены",
 
     pricingTitle: "Выберите подходящий формат Telegram-бота под вашу задачу",
     pricingSubtitle:
@@ -461,7 +461,7 @@ const content = {
 
     footerSubtitle:
       "Telegram bots for business, process automation and AI-enhanced solutions",
-    footerCopyright: "© 2026 b2bots. All rights reserved",
+    footerCopyright: "© 2026 B2Bots. All rights reserved",
 
     pricingTitle: "Choose the right Telegram bot format for your task",
     pricingSubtitle:
@@ -559,9 +559,9 @@ function Header({ t, theme, setTheme, lang, setLang }) {
   return (
     <header className="header">
       <div className="container nav">
-        <a className="brand" href="/#top" aria-label="b2bots">
-          <img src="/logobot.png" alt="b2bots" className="brand-logo" />
-          <div className="brand-text">b2bots</div>
+        <a className="brand" href="/#top" aria-label="B2Bots">
+          <img src="/logobot.png" alt="B2Bots" className="brand-logo" />
+          <div className="brand-text">B2Bots</div>
         </a>
 
         <nav className="nav-links">
@@ -611,7 +611,7 @@ function Header({ t, theme, setTheme, lang, setLang }) {
 
           <a
             className="btn btn-small"
-            href="https://t.me/b2bots_bot"
+            href="https://t.me/B2Bots_bot"
             target="_blank"
             rel="noreferrer"
           >
@@ -643,7 +643,7 @@ function LandingPage({ t, theme, setTheme, lang, setLang }) {
               <div className="hero-actions">
                 <a
                   className="btn"
-                  href="https://t.me/b2bots_bot"
+                  href="https://t.me/B2Bots_bot"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -939,7 +939,7 @@ function LandingPage({ t, theme, setTheme, lang, setLang }) {
             <div className="final-actions">
               <a
                 className="btn"
-                href="https://t.me/b2bots_bot"
+                href="https://t.me/B2Bots_bot"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -956,9 +956,9 @@ function LandingPage({ t, theme, setTheme, lang, setLang }) {
         <footer className="site-footer">
           <div className="container footer-inner">
             <div className="footer-brand-block">
-              <a className="footer-brand" href="/#top" aria-label="b2bots">
-                <img src="/logobot.png" alt="b2bots" className="footer-logo" />
-                <span className="footer-brand-text">b2bots</span>
+              <a className="footer-brand" href="/#top" aria-label="B2Bots">
+                <img src="/logobot.png" alt="B2Bots" className="footer-logo" />
+                <span className="footer-brand-text">B2Bots</span>
               </a>
 
               <p className="footer-subtitle">{t.footerSubtitle}</p>
@@ -1006,7 +1006,7 @@ function PricingPage({ t, theme, setTheme, lang, setLang }) {
                 <li>{t.priceFeature1_5}</li>
               </ul>
 
-              <a className="card-btn" href="https://t.me/b2bots_bot" target="_blank" rel="noreferrer">
+              <a className="card-btn" href="https://t.me/B2Bots_bot" target="_blank" rel="noreferrer">
                 {t.discussThis}
               </a>
             </article>
@@ -1025,7 +1025,7 @@ function PricingPage({ t, theme, setTheme, lang, setLang }) {
                 <li>{t.priceFeature2_5}</li>
               </ul>
 
-              <a className="card-btn primary" href="https://t.me/b2bots_bot" target="_blank" rel="noreferrer">
+              <a className="card-btn primary" href="https://t.me/B2Bots_bot" target="_blank" rel="noreferrer">
                 {t.chooseThis}
               </a>
             </article>
@@ -1044,7 +1044,7 @@ function PricingPage({ t, theme, setTheme, lang, setLang }) {
                 <li>{t.priceFeature3_5}</li>
               </ul>
 
-              <a className="card-btn" href="https://t.me/b2bots_bot" target="_blank" rel="noreferrer">
+              <a className="card-btn" href="https://t.me/B2Bots_bot" target="_blank" rel="noreferrer">
                 {t.requestCalc}
               </a>
             </article>
@@ -1156,7 +1156,7 @@ function PricingPage({ t, theme, setTheme, lang, setLang }) {
             </div>
 
             <div className="pricing-final-actions">
-              <a className="btn" href="https://t.me/b2bots_bot" target="_blank" rel="noreferrer">
+              <a className="btn" href="https://t.me/B2Bots_bot" target="_blank" rel="noreferrer">
                 {t.pricingFinalBtn1}
               </a>
               <a className="btn btn-secondary" href="/#top">
